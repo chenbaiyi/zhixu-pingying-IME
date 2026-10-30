@@ -1,0 +1,8 @@
+# Build-only dependency for the explicit head-to-full-expression table.
+schema:
+  schema_id: zhixu_xiehou
+  name: 知序歇后语词表
+  version: "20261028.1"
+translator:
+  dictionary: zhixu_xiehou
+  enable_user_dict: false

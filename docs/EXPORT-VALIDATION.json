@@ -1,0 +1,19 @@
+{
+  "copied_source_files": 265,
+  "source_hashes_verified": true,
+  "public_files": 274,
+  "public_bytes": 288505003,
+  "largest_public_file": 70253282,
+  "pattern_scan_findings": [],
+  "scan_scope": "UTF-8 text files up to 2 MiB; manual review required for any findings; not an exhaustive secret audit",
+  "build_rerun": false,
+  "pinned_asset_hashes_verified": 82,
+  "model_hash_verified": true,
+  "installer_hash_verified": true,
+  "python_syntax_files": 9,
+  "powershell_syntax_files": 13,
+  "cmake_source_references_verified": 84,
+  "json_parse_verified": true,
+  "git_ignore_verified": true,
+  "git_upload_files": 275
+}

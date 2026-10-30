@@ -1,0 +1,61 @@
+﻿syntax = "proto3";
+package zhixu.protocol.v1;
+option optimize_for = LITE_RUNTIME;
+enum MessageType {
+  MESSAGE_TYPE_UNSPECIFIED = 0; HELLO = 1; HELLO_ACK = 2; KEY_EVENT = 3; ENGINE_ACTION = 4;
+  COMMIT_REQUEST = 5; COMMIT_APPLIED = 6; COMMIT_REJECTED = 7;
+  PREDICTION_REQUEST = 8; PREDICTION_RESULT = 9; CARET_UPDATE = 10;
+  SESSION_INVALIDATED = 11; CONTROL_COMMAND = 12; CONTROL_RESULT = 13;
+  POLL_RECOMMENDATION = 14; LEARNING_OBSERVATION = 15;
+}
+message Envelope {
+  uint32 protocol_version = 1; MessageType message_type = 2; string session_id = 3;
+  uint64 request_id = 4; uint64 context_version = 5; bytes payload = 6;
+}
+message Hello { uint32 min_version = 1; uint32 max_version = 2; }
+message HelloAck { uint32 selected_version = 1; }
+message PrivacyDecision { bool allow_composition = 1; bool allow_learning = 2; bool allow_prediction = 3; uint32 reason = 4; }
+message KeyEvent {
+  uint32 key_code = 1; uint32 scan_code = 2; uint32 modifiers = 3;
+  bool key_down = 4; bool repeated = 5; PrivacyDecision privacy = 6;
+  // Layout-translated Unicode scalar; zero uses virtual-key fallback.
+  uint32 key_symbol = 7;
+  string application_hash = 8;
+}
+message Candidate { string text = 1; string comment = 2; uint32 index = 3; }
+message CompositionState {
+  // UTF-8 byte offset. Absent in legacy responses means end of preedit.
+  string preedit = 1; optional uint32 cursor = 2; repeated Candidate candidates = 3;
+  uint32 page = 4; bool has_next_page = 5; bool ascii_mode = 6;
+  bool full_shape = 7; bool ascii_punctuation = 8; bool traditional = 9;
+  optional uint32 highlighted_candidate = 10;  // Current-page candidate index.
+}
+message CommitRequest { string text = 1; uint64 expected_context_version = 2; uint64 request_id = 3; }
+message EngineAction { bool consumed = 1; CompositionState composition = 2; CommitRequest commit_request = 3; }
+message PollRecommendation { PrivacyDecision privacy = 1; string application_hash = 2; }
+message CommitApplied { uint64 request_id = 1; uint64 context_version = 2; }
+message CommitRejected { uint64 request_id = 1; sint32 hresult = 2; }
+message PredictionRequest {
+  string context_text = 1; uint32 candidate_limit = 2; uint64 deadline_tick_ms = 3;
+  repeated string enabled_package_ids = 4; PrivacyDecision privacy = 5; string policy_generation = 6;
+}
+enum SuggestionKind { SUGGESTION_UNSPECIFIED = 0; EXACT_CONTINUATION = 1; QUOTATION = 2; USER_NGRAM = 3; BASE_NGRAM = 4; MODEL_GENERATED = 5; }
+message PredictionCandidate {
+  string text = 1; SuggestionKind kind = 2; string source = 3; string author = 4;
+  string chapter = 5; double confidence = 6; string acceptance_id = 7;
+  string package_id = 8; string entry_id = 9;
+}
+message PredictionResult { repeated PredictionCandidate candidates = 1; bool final_result = 2; string policy_generation = 3; }
+message Rect { sint32 left = 1; sint32 top = 2; sint32 right = 3; sint32 bottom = 4; }
+message CaretUpdate { Rect caret = 1; Rect work_area = 2; uint32 dpi = 3; uint64 foreground_window = 4; uint64 notification_window = 5; }
+enum InvalidationReason { INVALIDATION_UNSPECIFIED = 0; FOCUS_CHANGED = 1; CARET_MOVED = 2; CONTINUED_INPUT = 3; EXTERNAL_EDIT = 4; ESCAPE = 5; DISCONNECTED = 6; }
+message SessionInvalidated { InvalidationReason reason = 1; uint64 context_version = 2; }
+enum ControlOperation {
+  CONTROL_UNSPECIFIED = 0; GET_SETTINGS = 1; PATCH_SETTINGS = 2; CLEAR_LEARNING = 3;
+  FORGET_TEXT = 4; INSTALL_PACKAGE = 5; ENABLE_PACKAGE = 6; DISABLE_PACKAGE = 7;
+  REMOVE_PACKAGE = 8; GET_RUNTIME_STATUS = 9; RESTART_CHILD = 10; EXPORT_DIAGNOSTICS = 11;
+}
+message ControlCommand { ControlOperation operation = 1; bytes arguments = 2; }
+message ControlResult { uint32 error_code = 1; bytes data = 2; }
+
+message LearningObservation { string identity = 1; string committed_text = 2; string context_before = 3; PrivacyDecision privacy = 4; string policy_generation = 5; }

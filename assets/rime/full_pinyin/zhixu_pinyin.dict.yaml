@@ -1,0 +1,13 @@
+# Repository-owned aggregation of the unmodified upstream dictionary and
+# independently maintained modern vocabulary. No upstream entries are edited.
+---
+name: zhixu_pinyin
+version: "2.1.0"
+sort: by_weight
+use_preset_vocabulary: false
+import_tables:
+  - wanxiang_plain
+  - zhixu_daily
+  - zhixu_public
+  - zhixu_context
+...

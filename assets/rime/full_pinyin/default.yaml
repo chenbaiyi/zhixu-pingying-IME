@@ -1,0 +1,7 @@
+﻿# ZhixuIME-owned deployment settings for the built-in full-Pinyin schema.
+config_version: "2026.10.08"
+schema_list:
+  - schema: zhixu_pinyin
+  - schema: zhixu_pinyin_exact
+menu:
+  page_size: 8

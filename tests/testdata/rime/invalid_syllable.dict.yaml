@@ -1,0 +1,6 @@
+# Validator regression fixture: 'sin' is not a Mandarin syllable in the base.
+---
+name: invalid_syllable
+version: "1"
+...
+微信	wei sin	100

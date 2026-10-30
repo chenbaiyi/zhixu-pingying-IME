@@ -1,0 +1,238 @@
+{
+  "revision": "20261028.1",
+  "provenance": "Independently maintained traditional expressions and manual standard pinyin. No external dictionary copied.",
+  "frequency_policy": "Explicit product-priority weights; not corpus counts. 有依据 is recalibrated from the reported frequency error; reported whole sentences are excluded.",
+  "priorities": [
+    {
+      "text": "有依据",
+      "pinyin": "you yi ju",
+      "weight": 64000
+    },
+    {
+      "text": "乾纲独断",
+      "pinyin": "qian gang du duan",
+      "weight": 100
+    }
+  ],
+  "new_phonetic_records": 17,
+  "recalibrated_records": 1,
+  "prefix_expansions": 20,
+  "records": [
+    {
+      "text": "乾纲独断",
+      "pinyin": "qian gang du duan",
+      "weight": 100
+    },
+    {
+      "text": "兔子尾巴",
+      "pinyin": "tu zi wei ba",
+      "weight": 100
+    },
+    {
+      "text": "周瑜打黄盖一个愿打一个愿挨",
+      "pinyin": "zhou yu da huang gai yi ge yuan da yi ge yuan ai",
+      "weight": 100
+    },
+    {
+      "text": "外甥打灯笼",
+      "pinyin": "wai sheng da deng long",
+      "weight": 100
+    },
+    {
+      "text": "外甥打灯笼照旧",
+      "pinyin": "wai sheng da deng long zhao jiu",
+      "weight": 100
+    },
+    {
+      "text": "孔夫子搬家净是输",
+      "pinyin": "kong fu zi ban jia jing shi shu",
+      "weight": 100
+    },
+    {
+      "text": "小葱拌豆腐一清二白",
+      "pinyin": "xiao cong ban dou fu yi qing er bai",
+      "weight": 100
+    },
+    {
+      "text": "张飞穿针粗中有细",
+      "pinyin": "zhang fei chuan zhen cu zhong you xi",
+      "weight": 100
+    },
+    {
+      "text": "擀面杖吹火",
+      "pinyin": "gan mian zhang chui huo",
+      "weight": 100
+    },
+    {
+      "text": "擀面杖吹火一窍不通",
+      "pinyin": "gan mian zhang chui huo yi qiao bu tong",
+      "weight": 100
+    },
+    {
+      "text": "有依据",
+      "pinyin": "you yi ju",
+      "weight": 64000
+    },
+    {
+      "text": "泥菩萨过河自身难保",
+      "pinyin": "ni pu sa guo he zi shen nan bao",
+      "weight": 100
+    },
+    {
+      "text": "狗咬吕洞宾不识好人心",
+      "pinyin": "gou yao lv dong bin bu shi hao ren xin",
+      "weight": 100
+    },
+    {
+      "text": "老鼠钻风箱",
+      "pinyin": "lao shu zuan feng xiang",
+      "weight": 100
+    },
+    {
+      "text": "老鼠钻风箱两头受气",
+      "pinyin": "lao shu zuan feng xiang liang tou shou qi",
+      "weight": 100
+    },
+    {
+      "text": "铁公鸡一毛不拔",
+      "pinyin": "tie gong ji yi mao bu ba",
+      "weight": 100
+    },
+    {
+      "text": "门缝里看人把人看扁了",
+      "pinyin": "men feng li kan ren ba ren kan bian le",
+      "weight": 100
+    },
+    {
+      "text": "黄鼠狼给鸡拜年没安好心",
+      "pinyin": "huang shu lang gei ji bai nian mei an hao xin",
+      "weight": 100
+    }
+  ],
+  "expressions": [
+    {
+      "head": "八仙过海",
+      "head_pinyin": "ba xian guo hai",
+      "tail": "各显神通",
+      "tail_pinyin": "ge xian shen tong"
+    },
+    {
+      "head": "外甥打灯笼",
+      "head_pinyin": "wai sheng da deng long",
+      "tail": "照旧",
+      "tail_pinyin": "zhao jiu"
+    },
+    {
+      "head": "哑巴吃黄连",
+      "head_pinyin": "ya ba chi huang lian",
+      "tail": "有苦说不出",
+      "tail_pinyin": "you ku shuo bu chu"
+    },
+    {
+      "head": "周瑜打黄盖",
+      "head_pinyin": "zhou yu da huang gai",
+      "tail": "一个愿打，一个愿挨",
+      "tail_pinyin": "yi ge yuan da yi ge yuan ai"
+    },
+    {
+      "head": "泥菩萨过河",
+      "head_pinyin": "ni pu sa guo he",
+      "tail": "自身难保",
+      "tail_pinyin": "zi shen nan bao"
+    },
+    {
+      "head": "黄鼠狼给鸡拜年",
+      "head_pinyin": "huang shu lang gei ji bai nian",
+      "tail": "没安好心",
+      "tail_pinyin": "mei an hao xin"
+    },
+    {
+      "head": "竹篮打水",
+      "head_pinyin": "zhu lan da shui",
+      "tail": "一场空",
+      "tail_pinyin": "yi chang kong"
+    },
+    {
+      "head": "小葱拌豆腐",
+      "head_pinyin": "xiao cong ban dou fu",
+      "tail": "一清二白",
+      "tail_pinyin": "yi qing er bai"
+    },
+    {
+      "head": "狗咬吕洞宾",
+      "head_pinyin": "gou yao lv dong bin",
+      "tail": "不识好人心",
+      "tail_pinyin": "bu shi hao ren xin"
+    },
+    {
+      "head": "丈二和尚",
+      "head_pinyin": "zhang er he shang",
+      "tail": "摸不着头脑",
+      "tail_pinyin": "mo bu zhao tou nao"
+    },
+    {
+      "head": "姜太公钓鱼",
+      "head_pinyin": "jiang tai gong diao yu",
+      "tail": "愿者上钩",
+      "tail_pinyin": "yuan zhe shang gou"
+    },
+    {
+      "head": "铁公鸡",
+      "head_pinyin": "tie gong ji",
+      "tail": "一毛不拔",
+      "tail_pinyin": "yi mao bu ba"
+    },
+    {
+      "head": "擀面杖吹火",
+      "head_pinyin": "gan mian zhang chui huo",
+      "tail": "一窍不通",
+      "tail_pinyin": "yi qiao bu tong"
+    },
+    {
+      "head": "孔夫子搬家",
+      "head_pinyin": "kong fu zi ban jia",
+      "tail": "净是输",
+      "tail_pinyin": "jing shi shu"
+    },
+    {
+      "head": "兔子尾巴",
+      "head_pinyin": "tu zi wei ba",
+      "tail": "长不了",
+      "tail_pinyin": "chang bu liao"
+    },
+    {
+      "head": "张飞穿针",
+      "head_pinyin": "zhang fei chuan zhen",
+      "tail": "粗中有细",
+      "tail_pinyin": "cu zhong you xi"
+    },
+    {
+      "head": "千里送鹅毛",
+      "head_pinyin": "qian li song e mao",
+      "tail": "礼轻情意重",
+      "tail_pinyin": "li qing qing yi zhong"
+    },
+    {
+      "head": "门缝里看人",
+      "head_pinyin": "men feng li kan ren",
+      "tail": "把人看扁了",
+      "tail_pinyin": "ba ren kan bian le"
+    },
+    {
+      "head": "老鼠钻风箱",
+      "head_pinyin": "lao shu zuan feng xiang",
+      "tail": "两头受气",
+      "tail_pinyin": "liang tou shou qi"
+    },
+    {
+      "head": "芝麻开花",
+      "head_pinyin": "zhi ma kai hua",
+      "tail": "节节高",
+      "tail_pinyin": "jie jie gao"
+    }
+  ],
+  "generated_sha256": {
+    "zhixu_context.dict.yaml": "30834dcb2eb04e014f4e6d075d8284aaad8bcf00bf84a5e966999dac5f48d793",
+    "zhixu_xiehou.dict.yaml": "a4673dcb05ad3a73b7792cecffbf1de46ff142d2eb251735d1e51504a5130a02"
+  }
+}

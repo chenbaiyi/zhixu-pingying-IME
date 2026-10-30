@@ -1,0 +1,55 @@
+if(NOT DEFINED LIBRIME_SOURCE_DIR)
+  message(FATAL_ERROR "LIBRIME_SOURCE_DIR is required")
+endif()
+
+# A reverse iterator's base can point at a trailing segment being removed.
+# Save a position before resizing and reacquire the retained segment afterward.
+set(context_file "${LIBRIME_SOURCE_DIR}/src/rime/context.cc")
+file(READ "${context_file}" context_contents)
+set(context_before "      while (it != composition_.rbegin()) {\n        composition_.pop_back();\n      }\n      it->Reopen(caret_pos());")
+set(context_after "      const auto keep = static_cast<size_t>(it.base() - composition_.begin());\n      composition_.resize(keep);\n      composition_.back().Reopen(caret_pos());")
+string(FIND "${context_contents}" "${context_before}" context_position)
+if(NOT context_position EQUAL -1)
+  string(REPLACE "${context_before}" "${context_after}" context_contents "${context_contents}")
+  file(WRITE "${context_file}" "${context_contents}")
+else()
+  string(FIND "${context_contents}" "${context_after}" context_patched)
+  if(context_patched EQUAL -1)
+    message(FATAL_ERROR "Expected locked librime ReopenPreviousSelection expression was not found")
+  endif()
+endif()
+
+# Punctuation after a committed Chinese word examines the final UTF-8 byte.
+# Passing that signed char directly to isdigit asserts in the MSVC Debug CRT.
+set(punctuation_file "${LIBRIME_SOURCE_DIR}/src/rime/gear/punctuator.cc")
+file(READ "${punctuation_file}" punctuation_contents)
+set(punctuation_before "return len > 0 && isdigit(text[len - 1]);")
+set(punctuation_after "return len > 0 && isdigit(static_cast<unsigned char>(text[len - 1]));")
+string(FIND "${punctuation_contents}" "${punctuation_before}" punctuation_position)
+if(NOT punctuation_position EQUAL -1)
+  string(REPLACE "${punctuation_before}" "${punctuation_after}" punctuation_contents "${punctuation_contents}")
+  file(WRITE "${punctuation_file}" "${punctuation_contents}")
+else()
+  string(FIND "${punctuation_contents}" "${punctuation_after}" punctuation_patched)
+  if(punctuation_patched EQUAL -1)
+    message(FATAL_ERROR "Expected locked librime ends_with_digit expression was not found")
+  endif()
+endif()
+
+# The locked librime revision feeds signed UTF-8 bytes to std::isalnum when
+# emitting localized schema scalars. MSVC Debug reports CRT assertions and
+# the call has undefined behavior on platforms with signed char.
+set(file "${LIBRIME_SOURCE_DIR}/src/rime/config/config_data.cc")
+file(READ "${file}" contents)
+set(before "[](auto ch) {\n               return std::isalnum(ch)")
+set(after "[](unsigned char ch) {\n               return std::isalnum(ch)")
+string(FIND "${contents}" "${before}" position)
+if(NOT position EQUAL -1)
+  string(REPLACE "${before}" "${after}" contents "${contents}")
+  file(WRITE "${file}" "${contents}")
+else()
+  string(FIND "${contents}" "${after}" patched)
+  if(patched EQUAL -1)
+    message(FATAL_ERROR "Expected locked librime EmitScalar expression was not found")
+  endif()
+endif()

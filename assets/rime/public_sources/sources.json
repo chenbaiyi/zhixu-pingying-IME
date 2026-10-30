@@ -1,0 +1,302 @@
+[
+  {
+    "repo": "amzxyz/rime-wanxiang",
+    "commit": "3d0a715ac4c3632ad8e1aab239ec8a42284c516a",
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 18656,
+        "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/LICENSE"
+      },
+      {
+        "path": "README.md",
+        "bytes": 6753,
+        "sha256": "32af277792c7dab236d8fd39932f88dfa54626b1b3e2392b10ff21f76ea666b8",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/README.md"
+      },
+      {
+        "path": "dicts/abbrev.dict.yaml",
+        "bytes": 558072,
+        "sha256": "947b7c487f0e8ca9bbdd47af6b27b2a6b21b994d0ac97b62c658db05946aa318",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/abbrev.dict.yaml"
+      },
+      {
+        "path": "dicts/cuoyin.dict.yaml",
+        "bytes": 8107,
+        "sha256": "05b423d95163e3e94a4acfd6ef83e22f85fe6212aabd8678298b896147187bea",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/cuoyin.dict.yaml"
+      },
+      {
+        "path": "dicts/daolu.dict.yaml",
+        "bytes": 377544,
+        "sha256": "5f84c3dd2ae5d39b27084632998de92f13f3d9742e3ec1a97a3354e22c1716bd",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/daolu.dict.yaml"
+      },
+      {
+        "path": "dicts/diming.dict.yaml",
+        "bytes": 3140696,
+        "sha256": "1f5e94c0dbf6d32eb46ab796470e76b37e90295d4f207707028873885bf39675",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/diming.dict.yaml"
+      },
+      {
+        "path": "dicts/duoyin.dict.yaml",
+        "bytes": 137293,
+        "sha256": "b31bec6c64cc78bd1eec9fab0d978a6c040957e9dc83bc8bacdcc5ddf82d15b7",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/duoyin.dict.yaml"
+      },
+      {
+        "path": "dicts/en.dict.yaml",
+        "bytes": 1568914,
+        "sha256": "3caf6a21c09c3b92a5167223a6a09f10b7fee0e32ffdb62415bbc0a946dcf551",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/en.dict.yaml"
+      },
+      {
+        "path": "dicts/jichu.dict.yaml",
+        "bytes": 48169900,
+        "sha256": "ea89860d41f229086a01d86ab2587fc6d8a1790723a30975a2d1dc9b535431f3",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/jichu.dict.yaml"
+      },
+      {
+        "path": "dicts/mingren.dict.yaml",
+        "bytes": 660248,
+        "sha256": "ca95a99a15d6635aa65514b2d7a183ddd3f62849486783565e001ca31d5c370e",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/mingren.dict.yaml"
+      },
+      {
+        "path": "dicts/mixed.dict.yaml",
+        "bytes": 35704,
+        "sha256": "c03078bc6d4671503a3f233b5c0f6e6e4c14fd5b7d473e0793b172b10f5c1674",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/mixed.dict.yaml"
+      },
+      {
+        "path": "dicts/renming.dict.yaml",
+        "bytes": 558577,
+        "sha256": "3fd6c23964f65408335b34889ab15ea6ab6a71a3672a188bcb1da6639a37a733",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/renming.dict.yaml"
+      },
+      {
+        "path": "dicts/shiti.dict.yaml",
+        "bytes": 2394749,
+        "sha256": "24c1829781c75a62389612e80a5407a23792091844cb7dc37a8d590b681fd867",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/shiti.dict.yaml"
+      },
+      {
+        "path": "dicts/t9_abbrev.dict.yaml",
+        "bytes": 514659,
+        "sha256": "2b72e3c0dee6ce6207a29a5cfa30ff310751bb977070086fc52868696bbc368f",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/t9_abbrev.dict.yaml"
+      },
+      {
+        "path": "dicts/yiren.dict.yaml",
+        "bytes": 417104,
+        "sha256": "80dcc15b4b26d59f18a7dcb75dafb6c372acac9b95a6ae705bfa68383c442915",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/yiren.dict.yaml"
+      },
+      {
+        "path": "dicts/zi.dict.yaml",
+        "bytes": 616550,
+        "sha256": "dbb68f8b4ef93e48bf3632b3c4bc00b810c6bbb2e101635d6e14752444abe7c9",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/dicts/zi.dict.yaml"
+      },
+      {
+        "path": "wanxiang.dict.yaml",
+        "bytes": 1419,
+        "sha256": "76c4475815b8aa7edf6b4ea972e9fb81060c61e4a405ca17a2318d53f4e706bf",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/wanxiang.dict.yaml"
+      },
+      {
+        "path": "wanxiang_algebra.yaml",
+        "bytes": 136870,
+        "sha256": "0a070b2c00f1e351687090c040fa779cbdc15439b45a438284aa1e4f4ac39e0d",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/3d0a715ac4c3632ad8e1aab239ec8a42284c516a/wanxiang_algebra.yaml"
+      }
+    ]
+  },
+  {
+    "repo": "iDvel/rime-ice",
+    "commit": "da1fbe602e38f26db846fa10120ee64c2b0324c0",
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 35149,
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/LICENSE"
+      },
+      {
+        "path": "README.md",
+        "bytes": 20494,
+        "sha256": "818e752e0e4bc38eadd17fd11e4139d31379aa0193476f3885b9f40e3a95f37e",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/README.md"
+      },
+      {
+        "path": "cn_dicts/41448.dict.yaml",
+        "bytes": 387353,
+        "sha256": "39102601365554433396fa64947010f5a15e7a2c27d22f6cce4d80775919e7bc",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/cn_dicts/41448.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/8105.dict.yaml",
+        "bytes": 115728,
+        "sha256": "1f9a42b91dea6982baee2551981780271aeffd78876662b9c9f324e56b37b120",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/cn_dicts/8105.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/base.dict.yaml",
+        "bytes": 16602296,
+        "sha256": "0418d5103d8e40c8fff4b686a873ad03e9836cd0419ecae0b7e1e2526312dba0",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/cn_dicts/base.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/ext.dict.yaml",
+        "bytes": 11922913,
+        "sha256": "8e49a0294c0139e63c815cc33a2d438cc144eb7889297d30cec899a368697c06",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/cn_dicts/ext.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/others.dict.yaml",
+        "bytes": 17454,
+        "sha256": "c7475d773e619f61b88d47fa8ec789aba02aa0d1c98edaed309e53487b048b32",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/cn_dicts/others.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/tencent.dict.yaml",
+        "bytes": 17340408,
+        "sha256": "352239dc875343cd49a04d7e79a9b73c5c95ad54e7fe1f8608b30c855a942904",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/cn_dicts/tencent.dict.yaml"
+      },
+      {
+        "path": "rime_ice.dict.yaml",
+        "bytes": 1407,
+        "sha256": "30fa643eec7af585cffacdd9bb6556ce4d17a0e848b83ea1fca3fdcfc5891595",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/rime_ice.dict.yaml"
+      },
+      {
+        "path": "rime_ice.schema.yaml",
+        "bytes": 19484,
+        "sha256": "ec4b0dd02ac287f53fe401f315cde648913eb60bb8cf8d9a8a613d1eb4f9698b",
+        "url": "https://raw.githubusercontent.com/iDvel/rime-ice/da1fbe602e38f26db846fa10120ee64c2b0324c0/rime_ice.schema.yaml"
+      }
+    ]
+  },
+  {
+    "repo": "gaboolic/rime-frost",
+    "commit": "19c615189c1173a84e7e9970469fb3d38db45766",
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 35149,
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/LICENSE"
+      },
+      {
+        "path": "README.md",
+        "bytes": 8575,
+        "sha256": "f517a2043b3321e13b1f44bad37ba60c9fd4d202bf7a74cb2800651f8b6e8fac",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/README.md"
+      },
+      {
+        "path": "cn_dicts/41448.dict.yaml",
+        "bytes": 452149,
+        "sha256": "b2115eae3aea58190424c22825f6aea12f781ae23ea82b62cd951c41f6d576d5",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts/41448.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/8105.dict.yaml",
+        "bytes": 99367,
+        "sha256": "5a6bb545d07140406208728aeed70706e84279daeee132f10b069cd6387a042a",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts/8105.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/GB18030-2022.dict.yaml",
+        "bytes": 1418895,
+        "sha256": "cb1b9cb35eeb06dd04264b87d1312be7141209b118ba811e5298a9fd70e77acd",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts/GB18030-2022.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/base.dict.yaml",
+        "bytes": 9937947,
+        "sha256": "db5825b653107eb349627d39ae74833208e06d52eb0231ce10c3bb59b94e4f86",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts/base.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/corrections.dict.yaml",
+        "bytes": 6885,
+        "sha256": "18161a6286a8751da2cae0777eafba3b8b4957dbacbe31ce2b3bfac90478cc2a",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts/corrections.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/ext.dict.yaml",
+        "bytes": 7711375,
+        "sha256": "44b78e4feb8a3b302298844061626aa4e2194901b8ed4ee6acec84261b6aa90d",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts/ext.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/others.dict.yaml",
+        "bytes": 74372,
+        "sha256": "c61582ce68b045ccc50a792eb19144974ba5a13753f18a8d924950d9c992d9ad",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts/others.dict.yaml"
+      },
+      {
+        "path": "cn_dicts/tencent.dict.yaml",
+        "bytes": 11181469,
+        "sha256": "55b1b1f32980d24a595e8a94a288f7896c84950622a34f2081d1147045ddceb7",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts/tencent.dict.yaml"
+      },
+      {
+        "path": "cn_dicts_common/4jian_no_conflict.dict.yaml",
+        "bytes": 2038971,
+        "sha256": "4f69b3d852e9b90b552c920299343db1bc7aee227ed50835afbd0b6e0c4fa67e",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_common/4jian_no_conflict.dict.yaml"
+      },
+      {
+        "path": "cn_dicts_common/changcijian.dict.yaml",
+        "bytes": 272076,
+        "sha256": "b33b3b71ed6be9e2b75e0b5cd83f0e76532f6e06b2c7dded0a8230d0101dcf89",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_common/changcijian.dict.yaml"
+      },
+      {
+        "path": "cn_dicts_common/changcijian3.dict.yaml",
+        "bytes": 896857,
+        "sha256": "06007c6d88d64ca2ef2018ee11aca1ab33a4f7847bad422c9b01022f372f8cf4",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_common/changcijian3.dict.yaml"
+      },
+      {
+        "path": "cn_dicts_common/chengyu.dict.yaml",
+        "bytes": 236212,
+        "sha256": "ea17e86244acdcce79387f15fe7ee4fa72a7b69cb2dfe9d30a28fdf3d3a001c3",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_common/chengyu.dict.yaml"
+      },
+      {
+        "path": "cn_dicts_common/jian.dict.yaml",
+        "bytes": 18992,
+        "sha256": "cfe08a58c80c2d2e4521ef58f108c900cb4a1c4127aa73f4b6b2f9b745433795",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_common/jian.dict.yaml"
+      },
+      {
+        "path": "cn_dicts_common/user.dict.yaml",
+        "bytes": 4411,
+        "sha256": "117d33030ece05908a5dc134da93e58692aaeaf0445a68c359542bd62ceac990",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_common/user.dict.yaml"
+      },
+      {
+        "path": "cn_dicts_common/word.dict.yaml",
+        "bytes": 722575,
+        "sha256": "633c9831c8097f2582043525b5902de8991755bcf851281cbac14329a748f99e",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/cn_dicts_common/word.dict.yaml"
+      },
+      {
+        "path": "rime_frost.dict.yaml",
+        "bytes": 3116,
+        "sha256": "962db9bfbcc4ba0aa18e5c6aab4c5c8ad72d4cb9cdc192738079db79da0fc63e",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/rime_frost.dict.yaml"
+      },
+      {
+        "path": "rime_frost.schema.yaml",
+        "bytes": 19889,
+        "sha256": "a0b497d7c46e39aac42c11ee8b76152ae25094c6f6c01accb64ec26cd43fa48a",
+        "url": "https://raw.githubusercontent.com/gaboolic/rime-frost/19c615189c1173a84e7e9970469fb3d38db45766/rime_frost.schema.yaml"
+      }
+    ]
+  }
+]

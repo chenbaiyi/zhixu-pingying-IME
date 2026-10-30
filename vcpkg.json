@@ -1,0 +1,13 @@
+{
+  "name": "zhixu-ime",
+  "version-semver": "0.1.0",
+  "supports": "windows & x64 & !uwp",
+  "dependencies": ["protobuf", {"name":"protobuf","host":true}, "tl-expected"],
+  "features": {
+    "tests": {"description":"Native unit and integration tests", "dependencies":["gtest"]},
+    "settings": {"description":"Versioned local settings storage", "dependencies":["nlohmann-json"]},
+    "prediction": {"description":"Local settings and corpus storage", "dependencies":["nlohmann-json","sqlite3",{"name":"minizip-ng","default-features":false,"features":["zlib"]}]},
+    "model": {"description":"Optional ONNX adapter in PredictService", "dependencies":["onnxruntime"]},
+    "librime": {"description":"Verified librime adapter build dependencies", "dependencies":["boost-algorithm","boost-crc","boost-dll","boost-filesystem","boost-interprocess","boost-range","boost-regex","boost-scope-exit","boost-signals2","boost-unordered","boost-uuid","gflags","glog","leveldb","marisa-trie","opencc","yaml-cpp"]}
+  }
+}

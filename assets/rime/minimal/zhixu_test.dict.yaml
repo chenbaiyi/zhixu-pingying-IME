@@ -1,0 +1,14 @@
+# Repository-owned synthetic test entries.  Not a distributable dictionary.
+---
+name: zhixu_test
+version: "0.1"
+sort: by_weight
+...
+
+你	ni	100
+妮	ni	1
+好	hao	100
+你好	ni hao	100
+知	zhi	100
+序	xu	100
+知序	zhi xu	100

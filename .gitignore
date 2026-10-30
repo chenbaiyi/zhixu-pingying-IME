@@ -1,0 +1,32 @@
+# Local build outputs and downloaded assets
+/out/
+/build/
+/vcpkg_installed/
+/.cache/
+/.local-assets/
+/.vs/
+/.idea/
+/.superpowers/
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+*.pdb
+*.user
+*.suo
+*.log
+*.dmp
+*.gram
+*.exe
+*.dll
+*.msi
+*.zip
+# Personal learning databases and local configuration
+*.userdb/
+*.userdb.*
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.env
+.env.*
+!.env.example

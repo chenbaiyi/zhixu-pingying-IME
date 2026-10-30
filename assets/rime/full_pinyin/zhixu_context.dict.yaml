@@ -1,0 +1,25 @@
+# Independently curated; provenance: CONTEXT-VOCABULARY.json.
+---
+name: zhixu_context
+version: "20261028.1"
+sort: by_weight
+use_preset_vocabulary: false
+...
+乾纲独断	qian gang du duan	100
+兔子尾巴	tu zi wei ba	100
+周瑜打黄盖一个愿打一个愿挨	zhou yu da huang gai yi ge yuan da yi ge yuan ai	100
+外甥打灯笼	wai sheng da deng long	100
+外甥打灯笼照旧	wai sheng da deng long zhao jiu	100
+孔夫子搬家净是输	kong fu zi ban jia jing shi shu	100
+小葱拌豆腐一清二白	xiao cong ban dou fu yi qing er bai	100
+张飞穿针粗中有细	zhang fei chuan zhen cu zhong you xi	100
+擀面杖吹火	gan mian zhang chui huo	100
+擀面杖吹火一窍不通	gan mian zhang chui huo yi qiao bu tong	100
+有依据	you yi ju	64000
+泥菩萨过河自身难保	ni pu sa guo he zi shen nan bao	100
+狗咬吕洞宾不识好人心	gou yao lv dong bin bu shi hao ren xin	100
+老鼠钻风箱	lao shu zuan feng xiang	100
+老鼠钻风箱两头受气	lao shu zuan feng xiang liang tou shou qi	100
+铁公鸡一毛不拔	tie gong ji yi mao bu ba	100
+门缝里看人把人看扁了	men feng li kan ren ba ren kan bian le	100
+黄鼠狼给鸡拜年没安好心	huang shu lang gei ji bai nian mei an hao xin	100

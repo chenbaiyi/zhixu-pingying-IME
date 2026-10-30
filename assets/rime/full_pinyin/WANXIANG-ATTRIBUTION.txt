@@ -1,0 +1,6 @@
+Wanxiang dictionary by amzxyz and contributors
+Source: https://github.com/amzxyz/rime-wanxiang
+Revision: b582a1b2a623a0da2d31729226224fd948e1c735
+License: Creative Commons Attribution 4.0 International (CC-BY-4.0)
+Changes: stripped pinyin tone marks, mapped umlaut to v, merged duplicate text/reading with maximum weight.
+Curated Zhixu supplement contains only absent entries, weight 1. Original sources remain under assets/rime/wanxiang_source.

@@ -1,0 +1,45 @@
+# Repository-owned synthetic schema used only for engine integration tests.
+schema:
+  schema_id: zhixu_test
+  name: Zhixu minimal test Pinyin
+  version: "0.1"
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [Chinese, ASCII]
+  - name: full_shape
+    states: [Half, Full]
+  - name: ascii_punct
+    states: [Chinese punctuation, ASCII punctuation]
+
+engine:
+  processors:
+    - ascii_composer
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - script_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  delimiter: " '"
+  algebra:
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+
+translator:
+  dictionary: zhixu_test
+  enable_user_dict: true
+  enable_sentence: false

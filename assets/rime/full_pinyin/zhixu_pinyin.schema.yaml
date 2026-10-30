@@ -1,0 +1,157 @@
+# Repository-owned full-Pinyin configuration; upstream dictionary is unmodified.
+schema:
+  schema_id: zhixu_pinyin
+  dependencies:
+    - zhixu_xiehou
+  name: 知序全拼
+  version: "2.3.0"
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [中文, 英文]
+  - name: full_shape
+    states: [半角, 全角]
+  - name: ascii_punct
+    states: [中文标点, 英文标点]
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - script_translator
+    - table_translator@xiehou
+    - punct_translator
+  filters:
+    - uniquifier
+
+menu:
+  page_size: 8
+
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  delimiter: " '"
+  # Input mapping only: no synonym relationship or extra abbreviation column.
+  # References and pinned source snapshots: PINYIN-RULES-SOURCES.md.
+  algebra:
+    # Support both ue and ve dictionary conventions for n/l umlauts.
+    - derive/^([nl])ue$/$1ve/
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+    # Fuzzy aliases precede abbreviation so mixed spelling uses the same sounds.
+    # Correction credibility keeps exact full Pinyin ahead of fuzzy aliases.
+    - derive/^([zcs])h/$1/correction
+    - derive/^([zcs])([^h])/$1h$2/correction
+    - derive/([ae])ng$/$1n/correction
+    - derive/([ae])n$/$1ng/correction
+    - derive/ing$/in/correction
+    - derive/in$/ing/correction
+    # Shared Rime / rime-ice / Clover abbreviation rules.
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    # Bounded misspellings, deliberately marked correction (log(0.01) penalty).
+    # One adjacent transposition at any of the five positions in a syllable.
+    # The temporary suffix prevents later rules from swapping an alias again.
+    # Remove it only after all five rules; it never enters the runtime alphabet.
+    - derive/^([a-z])([a-z])([a-z]*)$/$2$1$3~/correction
+    - derive/^([a-z]{1})([a-z])([a-z])([a-z]*)$/$1$3$2$4~/correction
+    - derive/^([a-z]{2})([a-z])([a-z])([a-z]*)$/$1$3$2$4~/correction
+    - derive/^([a-z]{3})([a-z])([a-z])([a-z]*)$/$1$3$2$4~/correction
+    - derive/^([a-z]{4})([a-z])([a-z])([a-z]*)$/$1$3$2$4~/correction
+    # Rotate one nasal vowel typed after ng; keep the correction bounded.
+    - derive/^([a-z]*)([aeio])ng$/$1ng$2~/correction
+    - xform/~$//
+    # Missing final g (zhon) or nasal-tail n (shag).
+    - derive/ong$/on/correction
+    - derive/([aeiou])ng$/$1g/correction
+
+translator:
+  dictionary: zhixu_pinyin
+  # Keep the existing user's learned vocabulary when the base tables expand.
+  user_dict: pinyin_simp
+  enable_user_dict: true
+  enable_sentence: true
+  enable_completion: false
+  max_homophones: 2
+  max_sentences: 3
+  sentence_cutoff_threshold: 1.0
+
+key_binder:
+  bindings:
+    - {when: always, accept: Control+period, toggle: ascii_punct}
+    - {when: always, accept: Shift+space, toggle: full_shape}
+    - {when: has_menu, accept: minus, send: Page_Up}
+    - {when: has_menu, accept: equal, send: Page_Down}
+
+ascii_composer:
+  good_old_caps_lock: true
+  switch_key:
+    Shift_L: commit_code
+    Shift_R: commit_code
+    Caps_Lock: commit_code
+
+punctuator:
+  digit_separators: ".,:/"
+  digit_separator_action: commit
+  half_shape:
+    ',': {commit: '，'}
+    '.': {commit: '。'}
+    '?': {commit: '？'}
+    '!': {commit: '！'}
+    ':': {commit: '：'}
+    ';': {commit: '；'}
+    '"': {pair: ['“', '”']}
+    "'": {pair: ['‘', '’']}
+    '(': {commit: '（'}
+    ')': {commit: '）'}
+    '[': {commit: '【'}
+    ']': {commit: '】'}
+    '<': {commit: '《'}
+    '>': {commit: '》'}
+    '/': {commit: '、'}
+    '\': {commit: '、'}
+    '_': {commit: '——'}
+    '^': {commit: '……'}
+    '~': {commit: '～'}
+  full_shape:
+    ',': {commit: '，'}
+    '.': {commit: '。'}
+    '?': {commit: '？'}
+    '!': {commit: '！'}
+    ':': {commit: '：'}
+    ';': {commit: '；'}
+    '"': {pair: ['“', '”']}
+    "'": {pair: ['‘', '’']}
+    '(': {commit: '（'}
+    ')': {commit: '）'}
+
+# Offline n-gram context scoring; provenance: GRAMMAR-SOURCES.json.
+grammar:
+  language: wanxiang-lts-zh-hans
+  collocation_max_length: 6
+  collocation_min_length: 2
+  collocation_penalty: -14
+  non_collocation_penalty: -6
+  weak_collocation_penalty: -100
+  rear_penalty: -18
+
+xiehou:
+  dictionary: zhixu_xiehou
+  enable_completion: false
+  enable_sentence: false
+  enable_user_dict: false
+  initial_quality: 0.1
+  comment_format:
+    - xform/.*/〔歇后语〕/

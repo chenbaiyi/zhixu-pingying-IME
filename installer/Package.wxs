@@ -1,0 +1,50 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="ZhixuIME" Manufacturer="ZhixuIME" Version="1.0.0.0"
+           UpgradeCode="{F1770672-D67F-4DF9-A056-20BC7D672CD9}" Scope="perUser">
+    <MajorUpgrade DowngradeErrorMessage="A newer version of ZhixuIME is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLFOLDER" Name="ZhixuIME">
+        <Component Id="TsfService" Bitness="always64">
+          <File Id="ImeTsfDll" Source="$(var.ImeTsfPath)" KeyPath="yes" />
+          <RegistryKey Root="HKCU" Key="Software\Classes\CLSID\{60F059D2-C31E-408C-BF6D-8CE1B46EA420}\InprocServer32">
+            <RegistryValue Type="string" Value="[#ImeTsfDll]" KeyPath="yes" />
+            <RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+          </RegistryKey>
+        </Component>
+        <Component Id="Broker" Bitness="always64">
+          <File Id="BrokerExe" Source="$(var.BrokerPath)" KeyPath="yes" />
+          <RegistryValue Root="HKCU" Key="Software\Microsoft\Windows\CurrentVersion\Run"
+                         Name="ZhixuIME.Broker" Value="&quot;[#BrokerExe]&quot;" Type="string" KeyPath="yes" />
+        </Component>
+        <Component Id="InputHost" Bitness="always64"><File Id="InputHostExe" Source="$(var.InputHostPath)" KeyPath="yes" /></Component>
+        <Component Id="PredictService" Bitness="always64"><File Id="PredictServiceExe" Source="$(var.PredictServicePath)" KeyPath="yes" /></Component>
+        <Component Id="SettingsApp" Bitness="always64"><File Id="SettingsExe" Source="$(var.SettingsPath)" KeyPath="yes" /></Component>
+      </Directory>
+    </StandardDirectory>
+
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ZhixuProgramMenu" Name="ZhixuIME">
+        <Component Id="SettingsShortcut" Bitness="always64">
+          <Shortcut Id="OpenSettings" Name="ZhixuIME 设置" Target="[#SettingsExe]" />
+          <RemoveFolder Id="RemoveZhixuProgramMenu" On="uninstall" />
+          <RegistryValue Root="HKCU" Key="Software\ZhixuIME" Name="StartMenuShortcut" Type="integer" Value="1" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+
+    <Feature Id="ZhixuIME" Title="ZhixuIME" Level="1">
+      <ComponentRef Id="TsfService" />
+      <ComponentRef Id="Broker" />
+      <ComponentRef Id="InputHost" />
+      <ComponentRef Id="PredictService" />
+      <ComponentRef Id="SettingsApp" />
+      <ComponentRef Id="SettingsShortcut" />
+    </Feature>
+
+    <!-- The clean-VM gate supplies the reversible TSF profile/category action.
+         This source skeleton does not invoke DllRegisterServer during development. -->
+    <Property Id="DELETE_USER_DATA" Secure="yes" />
+  </Package>
+</Wix>

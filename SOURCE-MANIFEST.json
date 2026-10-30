@@ -1,0 +1,1084 @@
+{
+  "snapshot_date": "2026-10-30",
+  "files": [
+    {
+      "path": "src/broker/child_spec.h",
+      "sha256": "a91ee9c73f6785062326efaadb07492ed2860d34dd3017751cbb3583577f0a86"
+    },
+    {
+      "path": "src/broker/main.cpp",
+      "sha256": "4762a334eb58b0fcc490347d807d14221c3c2c6b5dd274b4855aeac605bc577e"
+    },
+    {
+      "path": "src/broker/session_supervisor.cpp",
+      "sha256": "5a224008fee0cc22a2b2b11409391fc08f11e69fe876cfe513c484160c977023"
+    },
+    {
+      "path": "src/broker/session_supervisor.h",
+      "sha256": "3adfb9abc95e8e3836faeaab75914773916c07f383aee80946a3685c2a4c4843"
+    },
+    {
+      "path": "src/broker/settings_control.cpp",
+      "sha256": "94613ae3a0960b62f8a13c1f96a54868ac3948fa12341675497595d447b9ee27"
+    },
+    {
+      "path": "src/broker/settings_control.h",
+      "sha256": "54b65efc3bd9a228ad883f95989f6c4a3118d121381d04fab2ceff348cac32a5"
+    },
+    {
+      "path": "src/broker/win32_child_launcher.cpp",
+      "sha256": "8d52a44b1f4ba123a3222d1916107a9e44fd024f9ca4144ba4c9617f5d4ef46c"
+    },
+    {
+      "path": "src/broker/win32_child_launcher.h",
+      "sha256": "7fef3a64392ee17d3b174b15b88943a8fd73839bc3fc6af98b40c494bc9eeda2"
+    },
+    {
+      "path": "src/common/diagnostics/diagnostic_export.cpp",
+      "sha256": "2ce9942207c11bca1e56aff0704546761379832aef9e58d19e1324db5cd13013"
+    },
+    {
+      "path": "src/common/diagnostics/diagnostic_export.h",
+      "sha256": "d05d2655298121cc94f8299b68e716bddd97f6c3c40073f59efcf27a59370304"
+    },
+    {
+      "path": "src/common/diagnostics/sanitized_logger.cpp",
+      "sha256": "e3173232a0e8e96cd889148ecd85484cf085359050f5b97d408bc56714ff552c"
+    },
+    {
+      "path": "src/common/diagnostics/sanitized_logger.h",
+      "sha256": "9eb06278f6e77651529655710b6435c1788b53da18d3daca8027e2192a926ae0"
+    },
+    {
+      "path": "src/common/ipc/named_pipe.cpp",
+      "sha256": "29234e3c080fafabcc419a835f1e2d59e2dc844ca5079e03a68a9b99d5ebec9a"
+    },
+    {
+      "path": "src/common/ipc/named_pipe.h",
+      "sha256": "946a3263c2a68db76b1ce564256ee39ece243bf4889daf129514c3a7a378028e"
+    },
+    {
+      "path": "src/common/ipc/pipe_security.cpp",
+      "sha256": "9fd395970f8ef14cf52f715a0b97a8b18efc4a301661ebff1ab727ce12651dd2"
+    },
+    {
+      "path": "src/common/ipc/pipe_security.h",
+      "sha256": "d503e5293d0b6d15e59785920c170286690a7cbfcc90c272c963721ead3b273b"
+    },
+    {
+      "path": "src/common/paths/runtime_paths.cpp",
+      "sha256": "21526d1c198704aef1eefcbc345ca173172ffd47814e5135c49a307cb380e003"
+    },
+    {
+      "path": "src/common/paths/runtime_paths.h",
+      "sha256": "ddd2d7dc4834e805fd41128d9a9ef87d8adda191ad0771260fec44448173d1a3"
+    },
+    {
+      "path": "src/common/protocol/envelope_codec.cpp",
+      "sha256": "e6904c83f06aa35ff6b2554563075107b1f09efdc49a31f6e928446e8a9139c2"
+    },
+    {
+      "path": "src/common/protocol/envelope_codec.h",
+      "sha256": "e65fd932364de32386aced0d2863a5cfe7de0c2edab465f706d29542017572a3"
+    },
+    {
+      "path": "src/common/protocol/key_modifiers.h",
+      "sha256": "f23aef7a14e15f9118ec53956a93a770d3be36d35c794e365439d75f761b5633"
+    },
+    {
+      "path": "src/common/protocol/protocol_handshake.cpp",
+      "sha256": "b91c1c69caba99530ca36434d161be62f2b06618a9dc2d30d09ac8554b3f7023"
+    },
+    {
+      "path": "src/common/protocol/protocol_handshake.h",
+      "sha256": "73f66fa0871fe713cdf8e002bebe32953d7d283ebe5a419ae5aa1b116861efbe"
+    },
+    {
+      "path": "src/common/protocol/recommendation_notification.h",
+      "sha256": "88dda1ec2e2a23c61be25aaf1f9fa75ffbe8405d8a13d51f3fe31c3eaa3e88be"
+    },
+    {
+      "path": "src/common/settings/runtime_settings.h",
+      "sha256": "d7ce3ef0dbfec23ffe9c7fadb34bb864211fadd768d38a1cee899073d3b5469c"
+    },
+    {
+      "path": "src/common/settings/settings_schema.json",
+      "sha256": "afcbf8f9a0cef8409be6cb3d6656e4d48ae39f98f031906da377c57d06f40532"
+    },
+    {
+      "path": "src/common/settings/settings_store.cpp",
+      "sha256": "281e44436169a6d1bededf88f7d5028478ff98f2aa697d12cebeaffc608afe9a"
+    },
+    {
+      "path": "src/common/settings/settings_store.h",
+      "sha256": "8565d988e964cbf4472863f98f530b6218281d1e50f363c3a5637837f7684a71"
+    },
+    {
+      "path": "src/common/settings/suggestion_policy.h",
+      "sha256": "f7d42d72ec8c0e8fc433a94dd15efdf97b92074aec7145d0563a0ef4af297454"
+    },
+    {
+      "path": "src/input_host/engine/input_engine.h",
+      "sha256": "7c7cdf43caccb4bc71822196f308ebe11edadf6460261c1f06b469ec606d46a3"
+    },
+    {
+      "path": "src/input_host/engine/rime_engine.cpp",
+      "sha256": "3708de9db2d850137d7dc1e2a175d36e5c08b832ac90d12ca6de863ab7763cba"
+    },
+    {
+      "path": "src/input_host/engine/rime_engine.h",
+      "sha256": "a51ef301242f34c5b045d4534fcf9197a2fd7002eb0b8c32f0404bdb4226552e"
+    },
+    {
+      "path": "src/input_host/input_host_server.cpp",
+      "sha256": "08b1b92548973b48a12222dad978903d3df19549d1cafe11af3ac9490da6d22b"
+    },
+    {
+      "path": "src/input_host/input_host_server.h",
+      "sha256": "dc614cb7a551cfdbd9dd53a88868f5317d661e612a0e71ef50b5fefae23d15da"
+    },
+    {
+      "path": "src/input_host/main.cpp",
+      "sha256": "99b29049fa2d84388ea9d597990bc0da975ea6f17abe1a121ffb641cf1414e66"
+    },
+    {
+      "path": "src/input_host/prediction/prediction_dispatcher.cpp",
+      "sha256": "fe1814e33c7d0518bad428ac93ee798cea85a6be2a4083a04ce8b02fc60da640"
+    },
+    {
+      "path": "src/input_host/prediction/prediction_dispatcher.h",
+      "sha256": "c909a3df03316f21c20e8807b66754f0af5c3bfae4b0791d009a66b0cb3cc4de"
+    },
+    {
+      "path": "src/input_host/prediction/prediction_runtime.cpp",
+      "sha256": "6d2983e4d3accd9d48a0877f926dd5658f3a6e97631ae67d0029bd02df4ae238"
+    },
+    {
+      "path": "src/input_host/prediction/prediction_runtime.h",
+      "sha256": "4b7e6e4526749c457340c12612d1cba0290afa024a50056c8ae70ccc597f67da"
+    },
+    {
+      "path": "src/input_host/prediction/prediction_service_client.cpp",
+      "sha256": "fd3d62db06789f77bb75aefac25fdf984a1d013d4bbd9bebf12b54d3da8853fa"
+    },
+    {
+      "path": "src/input_host/prediction/prediction_service_client.h",
+      "sha256": "381e02cae572c45f4bbd4f7671b6791c20dbbe8e875796a532dbbf93596a989f"
+    },
+    {
+      "path": "src/input_host/session/session_controller.cpp",
+      "sha256": "68c9e1f5e3b75d504f4d79efc047044c3483a4ad11ad8b5bd7c88c2d6947238f"
+    },
+    {
+      "path": "src/input_host/session/session_controller.h",
+      "sha256": "92ba4b4e58e8034f323a212534e6153df94979574ff2bdff29e44ece2fbc75b2"
+    },
+    {
+      "path": "src/input_host/ui/candidate_presentation.cpp",
+      "sha256": "44f8eef77903bd9e4c268f953116c076d3b7a7779ddff0250c1dd23ad9b880c2"
+    },
+    {
+      "path": "src/input_host/ui/candidate_presentation.h",
+      "sha256": "c3a958bffa62437a06cf48684e1832c54e523ef52ecd577e6eae99b33736ee54"
+    },
+    {
+      "path": "src/input_host/ui/candidate_window.cpp",
+      "sha256": "dcc3e71639b7b8709faf72d7e9aaaecc41892819aa14ff6a4a7658c1cbb79a81"
+    },
+    {
+      "path": "src/input_host/ui/candidate_window.h",
+      "sha256": "52ed97b633435f9afd5393a3769dd7916205232b66d98b366a0cf91c6b2736fd"
+    },
+    {
+      "path": "src/input_host/ui/candidate_window_host.cpp",
+      "sha256": "1c89ad3c60af7a72b05d8f8cfca9f97b8d95b30b583d0cfa696a77b7a9d5caf1"
+    },
+    {
+      "path": "src/input_host/ui/candidate_window_host.h",
+      "sha256": "7b3b8d2cf82678bc6509c3a027502c5581afb88a8553ab243192783298153561"
+    },
+    {
+      "path": "src/input_host/ui/recommendation_presentation.cpp",
+      "sha256": "0d49208f5135952e5410557880c84f9e9c694fcdb25a6bbe35a0158f818870b5"
+    },
+    {
+      "path": "src/input_host/ui/recommendation_presentation.h",
+      "sha256": "3e59bf66b8002d0d6e08301f5233a23f300868d2459e0b8005e13a5571ff2b24"
+    },
+    {
+      "path": "src/input_host/ui/recommendation_window.cpp",
+      "sha256": "4fb0f976f4e1f202a1c4781a29c098a10e6ac0d2d3c5801b661029ef6eda1f43"
+    },
+    {
+      "path": "src/input_host/ui/recommendation_window.h",
+      "sha256": "fe668b3b4cc23654150809d4124eee0eb4f2caec00e78f00c3d133712ad27ea3"
+    },
+    {
+      "path": "src/input_host/ui/recommendation_window_host.cpp",
+      "sha256": "1155c715f2f32a03f032415d86e57c5c79c465bf1ba5fed5284e6746ac3736f3"
+    },
+    {
+      "path": "src/input_host/ui/recommendation_window_host.h",
+      "sha256": "3d2ed62520a687ff5abc379823dc5f7f5540562954f81291fee0c4488c59d192"
+    },
+    {
+      "path": "src/input_host/ui/window_base.cpp",
+      "sha256": "b44c107d15458168e0a3df1c31ce732c0a0814c96a4b5e168a701029513b8521"
+    },
+    {
+      "path": "src/input_host/ui/window_base.h",
+      "sha256": "0ecd4217335ec3b2815b86431da4d137369f8a71a5f53ce57399d27601f2df69"
+    },
+    {
+      "path": "src/input_host/ui/window_placement.cpp",
+      "sha256": "5f08258c15b2d8b6179e9faa8be059f29cc139a1b84b28911952400c572febe4"
+    },
+    {
+      "path": "src/input_host/ui/window_placement.h",
+      "sha256": "78d0a59fa8f8ac6dcc8ff0862e6cf7312d750b4bdae2a495de71aaf0a0b1d38c"
+    },
+    {
+      "path": "src/predict/imepack/disk_index.cpp",
+      "sha256": "d976d55ae7ac74adf80be16b68cd368c4cce4959a8fac790078a5f58f3b54648"
+    },
+    {
+      "path": "src/predict/imepack/disk_index.h",
+      "sha256": "ecf6c6c85083a7500a572c18c214368a2a7861522332f1398c4c87680816cb65"
+    },
+    {
+      "path": "src/predict/imepack/index_builder.cpp",
+      "sha256": "ce92ee77c6f1c1ff1a44d7a010aa76222874c11ff48075a5334f16a88456c596"
+    },
+    {
+      "path": "src/predict/imepack/index_builder.h",
+      "sha256": "d2aa032914238fb77b4132de6596e75ece51c8ccaaed1838f1ccec6e03fd886f"
+    },
+    {
+      "path": "src/predict/imepack/matching_text.h",
+      "sha256": "2f10c36d0a912b5a1076fad187da02b71aca5a8664635a100e796c65ea31b395"
+    },
+    {
+      "path": "src/predict/imepack/package_store.cpp",
+      "sha256": "e2f962be9224df5aa19c4c2472e518a8bd9c7778f1d66da92f519cb94d7459c2"
+    },
+    {
+      "path": "src/predict/imepack/package_store.h",
+      "sha256": "5d736179972877e6e7f30b866abb0cf1c9ce26102b4ef4102827c34860e05131"
+    },
+    {
+      "path": "src/predict/imepack/package_types.h",
+      "sha256": "074813c581e76837be999b375c9b4ec483682ceaf920a5a12bad17b8e62e953a"
+    },
+    {
+      "path": "src/predict/imepack/package_validator.cpp",
+      "sha256": "da07c5b2a41e197d7b64eafade0927e43c235f3162d4dea496b8880c08b10701"
+    },
+    {
+      "path": "src/predict/imepack/package_validator.h",
+      "sha256": "385190a31253a6efe33d1cd434053450609cdc871d3f0e547f98753b34957491"
+    },
+    {
+      "path": "src/predict/imepack/routing_index.cpp",
+      "sha256": "a1a2aa3787c76463a1c938c1dfb14d46c128a4e11d791390db0aeb830c7db2f5"
+    },
+    {
+      "path": "src/predict/imepack/routing_index.h",
+      "sha256": "b5bbe7265003698675101a76df4252c70de89dbb44822f5a8610792aa897809c"
+    },
+    {
+      "path": "src/predict/personalization/personalization_store.cpp",
+      "sha256": "6a30cfa5b670298229fd360f98ff98cfabcb1019e8ef82204288f63c01b32bc6"
+    },
+    {
+      "path": "src/predict/personalization/personalization_store.h",
+      "sha256": "5f26f32376797372a0e4573db44aa4eceeb257ae838d5432d6e52426575dfc71"
+    },
+    {
+      "path": "src/predict/prediction/prediction_coordinator.cpp",
+      "sha256": "b96bd96fe6aee693d4c4f1241635caea11688d18155ab4198988519a227a0f94"
+    },
+    {
+      "path": "src/predict/prediction/prediction_coordinator.h",
+      "sha256": "58fe1845fbcf321c210aae32ca8a96c7de7dce0b63aaa6e56dda3047ca87b8d1"
+    },
+    {
+      "path": "src/predict/prediction/prediction_types.h",
+      "sha256": "ace54d19d1e6fd580ecb50ec2856eadab148efa71858e02e3f6760d6a9faac30"
+    },
+    {
+      "path": "src/predict/prediction/ranker.cpp",
+      "sha256": "8e85f9d1ba96c6160a22c60263cec27a8937524c241e312137b8f7f3b3a44489"
+    },
+    {
+      "path": "src/predict/prediction/ranker.h",
+      "sha256": "1c3a57bdc97d80b5bb94b0f62959afcc47edb0284b343649a3e9bd9d0ad96bbc"
+    },
+    {
+      "path": "src/predict/prediction/retriever.cpp",
+      "sha256": "2032a901b8ae50529b43bf62bac83129dd116cfc124869f65f62f68ed8a85d34"
+    },
+    {
+      "path": "src/predict/prediction/retriever.h",
+      "sha256": "340317d909d8c8490bf203359263bf7e1083e458cad771c61ba1a3b80366780c"
+    },
+    {
+      "path": "src/predict_service/corpus_normalize.cpp",
+      "sha256": "6fb294772500e3f66ef52c606990db429f28a54e829fcd1b7f9b5507ffe20a24"
+    },
+    {
+      "path": "src/predict_service/corpus_tool.cpp",
+      "sha256": "c1c79d1e658f8da806bd5780aeb98d4c360fd9a21fb773b9ca97a5108b3b05d5"
+    },
+    {
+      "path": "src/predict_service/main.cpp",
+      "sha256": "cde990375c13cc3373d31018287e301192bca8f80da26d9dd26395ef001519e1"
+    },
+    {
+      "path": "src/settings/App.xaml",
+      "sha256": "91b8b76c649be93243b8cdb0a82aea6a54c80ff9290fa96c42978310b827276b"
+    },
+    {
+      "path": "src/settings/App.xaml.cs",
+      "sha256": "c7ebc11e460b67ced288e3f5d9b7b75cfee851e6207031ff13e0275acc392ee0"
+    },
+    {
+      "path": "src/settings/GlobalUsings.cs",
+      "sha256": "38e345bf77c34fe4324957818e9ec31deae619f530a558d020c73b637543df88"
+    },
+    {
+      "path": "src/settings/MainWindow.xaml",
+      "sha256": "b5f391078310812fd7f05076e089ca1c01f8846b100bfe90ad3e68abe90d5e5b"
+    },
+    {
+      "path": "src/settings/MainWindow.xaml.cs",
+      "sha256": "3ab90226a8019eadbd1cd6d96767ef8516d78b8d16dc258992a167546a8a9b62"
+    },
+    {
+      "path": "src/settings/SettingsBackend.cs",
+      "sha256": "4560327f6772d98730a0435781aca0ad2e5d6e1dc8fd6e4af437f0e80a282389"
+    },
+    {
+      "path": "src/settings/SettingsViewModel.cs",
+      "sha256": "bcdae35c9f640ded987741845d6cca69127f50b22e002cd55a0e44fd51fec33a"
+    },
+    {
+      "path": "src/settings/ZhixuIME.Settings.csproj",
+      "sha256": "f9ec79db327cd396f619299360cad5a9965587035287eccdf2e05368eb7810cf"
+    },
+    {
+      "path": "src/tsf/class_factory.cpp",
+      "sha256": "e0abb2b15316e2bd2b1777f245a7f7523ab6e369e99777bd27b21af2e8dc35b2"
+    },
+    {
+      "path": "src/tsf/class_factory.h",
+      "sha256": "58720ab08055a8ab01d74465630099384764b11bb5c93dcdb6eeadecc6094ebb"
+    },
+    {
+      "path": "src/tsf/debug_trace.h",
+      "sha256": "da4a5b119180846df3f3188add3c0db8a208de62163676f78bffe00c1a53dcc0"
+    },
+    {
+      "path": "src/tsf/dllmain.cpp",
+      "sha256": "84484178470c3554ab637f214d058cb8340d154d5368aa93c7634d6f437a2617"
+    },
+    {
+      "path": "src/tsf/edit_session.cpp",
+      "sha256": "4722c793c788ef0908521646e95e82870375b7849485d6aa7070cc6ee0caec56"
+    },
+    {
+      "path": "src/tsf/edit_session.h",
+      "sha256": "12af04138704e018e2c8c591cb280da91b2cb3642bd0b90aa733cf2ba5d08ce3"
+    },
+    {
+      "path": "src/tsf/ids.h",
+      "sha256": "5a1865ba6246230647153b5bab7ef94b160556839928c79416e286f6860f7c37"
+    },
+    {
+      "path": "src/tsf/ime_tsf.def",
+      "sha256": "d828b2a0158462f2818b175e14aeacea0e7d7c844bf1c9733e3d4899836cb06a"
+    },
+    {
+      "path": "src/tsf/input_host_transport.cpp",
+      "sha256": "e5c255546afdedc8e79bc6d744f23f405f9e7d4341f1a6e8c6c3d369e232f00b"
+    },
+    {
+      "path": "src/tsf/input_host_transport.h",
+      "sha256": "83b43e10eb04fa66366c4d78bee853c3ceb0f6260d9541fbded52a3cafa0c5d0"
+    },
+    {
+      "path": "src/tsf/input_scope_policy.cpp",
+      "sha256": "764e4d7eb9b6d2a800678d1958109a6073f64995515060ccedd6e4b1017be971"
+    },
+    {
+      "path": "src/tsf/input_scope_policy.h",
+      "sha256": "e9ad55b3530ce9c912423616402fb69121664946d629f3930931ab22e06a2d50"
+    },
+    {
+      "path": "src/tsf/key_event_sink.cpp",
+      "sha256": "78b15c322cde6b9cd9f29f9c6bbc4cac2b64c085a83e6f091adc86f57b58a30a"
+    },
+    {
+      "path": "src/tsf/key_event_sink.h",
+      "sha256": "cf4a093678b359c1bcdbd4a15cdf2c4be9ea58b358fc58d678027331087b4e31"
+    },
+    {
+      "path": "src/tsf/module_lifetime.cpp",
+      "sha256": "deb22e2eb1e4484786a3c2520a112d007833a46ac3dd53b28fabee729556b36c"
+    },
+    {
+      "path": "src/tsf/module_lifetime.h",
+      "sha256": "0b09ab8c79b55abaf54e23f6f0ab67abcfdd5cd3ab2a2d70a71660a27364c512"
+    },
+    {
+      "path": "src/tsf/preedit_state.cpp",
+      "sha256": "70e3510f83549df97a87a5028b37570d06981a894430a27927d8d55ebd578926"
+    },
+    {
+      "path": "src/tsf/preedit_state.h",
+      "sha256": "67ea19a6681c43731fff7bdd1d7d51cd5a1675a2ffef29b0106114abd41b66c7"
+    },
+    {
+      "path": "src/tsf/text_service.cpp",
+      "sha256": "52dd494bd5125c1358bd104945b29946d063be3454a7a9db6aec32f05604d2dc"
+    },
+    {
+      "path": "src/tsf/text_service.h",
+      "sha256": "bbea819dfd4c552143c0c1e38feab15b08ceb9d93e2a5a52fca39d9ce4b759f7"
+    },
+    {
+      "path": "src/tsf/tsf_text_service.cpp",
+      "sha256": "16e9d9b1df55ac77cf1f4fcd0efc2b987fbd926d362ca5bfda31ce1b43aff52a"
+    },
+    {
+      "path": "src/tsf/tsf_text_service.h",
+      "sha256": "8a74d1c44f3e7d7f89b81ae994765f9c71b4dfd1b80c1de06e44d573e7ed221a"
+    },
+    {
+      "path": "tests/assets/test_corpus_import.py",
+      "sha256": "8f3f0ca2a4fd1a7af3d5dfc78349eb25ce9f04cc57689ea55a0ada566dfbf03e"
+    },
+    {
+      "path": "tests/assets/test_wanxiang_import.py",
+      "sha256": "86e510a7e2c80a2830103ba8e6e0c37cb44211e58f82fe861d4f17c76fec278a"
+    },
+    {
+      "path": "tests/broker/session_supervisor_test.cpp",
+      "sha256": "c8b336f2f706c3ce6256e18ec488109f0256d80d13805d72f7bd376462a24828"
+    },
+    {
+      "path": "tests/broker/settings_control_test.cpp",
+      "sha256": "d9e1ff6e012cc1ba504cd5d416a744dc92f2f332779e8e78511b48d83f5e015b"
+    },
+    {
+      "path": "tests/common/diagnostic_export_test.cpp",
+      "sha256": "8fad294036c7df99c16a176a1ec6efd479fb7022963bfa0f7f4530e6bc4f93af"
+    },
+    {
+      "path": "tests/common/envelope_codec_test.cpp",
+      "sha256": "e284a27371ba8ee134adf402a4dafea23cbc2e489edd8903e6df8f55f0107c86"
+    },
+    {
+      "path": "tests/common/named_pipe_test.cpp",
+      "sha256": "899f1b02826046a9dcddc3e4de48bd721f5ae84261f0e19ecf76f84e22fdfffb"
+    },
+    {
+      "path": "tests/common/protocol_handshake_test.cpp",
+      "sha256": "9d4904fa89b999c4e9a46578abc293816a5a15757af4356f8af9709469a45efa"
+    },
+    {
+      "path": "tests/common/runtime_paths_test.cpp",
+      "sha256": "036fd7f78fae0f7d3a9a532397faabee7697408946ea693f1b89a7521d298733"
+    },
+    {
+      "path": "tests/common/sanitized_logger_test.cpp",
+      "sha256": "d12eda2a7f97a161a38504867b915539e339acac8e7848a6b86fc6d94f3cde6a"
+    },
+    {
+      "path": "tests/common/settings_store_test.cpp",
+      "sha256": "d8a1b43909d9d2f0c20491692483d6707d17dc7fc54cd0169cf1ecc6bc9847f1"
+    },
+    {
+      "path": "tests/input_host/input_host_server_test.cpp",
+      "sha256": "c76fa9111f1d44705f9c5c25b951a081d2a658ca31bd3608fccf69c4fbe31bf2"
+    },
+    {
+      "path": "tests/input_host/prediction_dispatcher_test.cpp",
+      "sha256": "4ad33e196a361c38a3764b1dc0f012aa242ecde1c2aaa247478e250917a8c07e"
+    },
+    {
+      "path": "tests/input_host/rime_engine_test.cpp",
+      "sha256": "426f98d0d88a4d551e0371fdf59169111d3bcff9c9c8d5405d365bc56a3c0469"
+    },
+    {
+      "path": "tests/input_host/runtime_recovery_test.cpp",
+      "sha256": "f4e43c8cdaad21edc39e4709b5e71ad2fcd54a6305f098dd9a62e96745ca8bcd"
+    },
+    {
+      "path": "tests/input_host/session_controller_test.cpp",
+      "sha256": "81e0bd6f2c754591124b50a4d2d97c09fbe8961fab2f9041c4b54dbe491195be"
+    },
+    {
+      "path": "tests/input_host/window_placement_test.cpp",
+      "sha256": "bd209b33522c2336e81a150738f216e9c4bfc44ece6cfc35583d1ff0b4944e0a"
+    },
+    {
+      "path": "tests/input_host/window_smoke.cpp",
+      "sha256": "f486be4c103049edaecf7fde584f4573f6a72bec308f3ca6faee3c702ffdd156"
+    },
+    {
+      "path": "tests/predict/package_store_test.cpp",
+      "sha256": "9fdf432c35ec92dcc2c1c7177e4c772deef225da8565245e9c4f19d2e38e1060"
+    },
+    {
+      "path": "tests/predict/package_validator_test.cpp",
+      "sha256": "1c70edfccd7af019c1655793159bb73f0f6ee0aaba2810c7618596dda66e83d7"
+    },
+    {
+      "path": "tests/predict/personalization_store_test.cpp",
+      "sha256": "666ade8500a8d38b9713d6194c3a3d68f5351672555ce62cf2d28a3f27015c93"
+    },
+    {
+      "path": "tests/predict/prediction_coordinator_test.cpp",
+      "sha256": "56fb3becf44568c09c28520fc53d2f04f1fbbc3887c23241a49a1ebbcb521abe"
+    },
+    {
+      "path": "tests/predict/ranker_test.cpp",
+      "sha256": "6897058efafd48a7d0922984576466d14c2bb777e083be50226027ee3c434c45"
+    },
+    {
+      "path": "tests/predict/retriever_test.cpp",
+      "sha256": "6d2c53f96acb015ef2d27e9801a3511470db3e87046347597fca6d6282f2b094"
+    },
+    {
+      "path": "tests/settings/SettingsViewModelTests.cs",
+      "sha256": "6f29a8ee7348057456c74488f50e91164f314594fc690ea419aadf69d7b5c8c8"
+    },
+    {
+      "path": "tests/settings/ZhixuIME.Settings.Tests.csproj",
+      "sha256": "3750d9bc3ce87443a4390fbde41effa33ccaacf9fe4dc1954e00ca4b243ec0f5"
+    },
+    {
+      "path": "tests/testdata/rime/invalid_syllable.dict.yaml",
+      "sha256": "40b8c13a95608d97824553466a40d90ef9476d2264729cad47e82de658c618ea"
+    },
+    {
+      "path": "tests/tsf/input_host_transport_test.cpp",
+      "sha256": "086e4c00503338bf8cb65d43ab7007d56974bb0422daffac7dfc70cbbcf37299"
+    },
+    {
+      "path": "tests/tsf/input_scope_policy_test.cpp",
+      "sha256": "ed7b6f5e8e8ca02b810f43a52493b9f26a6ac993f08d97f347470c5cf72f8c39"
+    },
+    {
+      "path": "tests/tsf/key_event_sink_test.cpp",
+      "sha256": "ef0e194dffd09c82ff691a2d4a3267f90a296f28a810e04c28bb40f18ec2cf06"
+    },
+    {
+      "path": "tests/tsf/preedit_state_test.cpp",
+      "sha256": "74c7674f3f5efe32b4482ceb71662651545a0eb1f71812cca44d7be15f3fbff9"
+    },
+    {
+      "path": "tests/tsf/text_service_test.cpp",
+      "sha256": "1e04542fad8aa3374d19bb9534afb980e22a2aa764b539305e4bd7ac87cd804e"
+    },
+    {
+      "path": "tests/tsf/tsf_com_exports_test.cpp",
+      "sha256": "3935babcc6530e3d132b50adf1007b69412b5e21f3a16e0b0203b1f0fea0bb5a"
+    },
+    {
+      "path": "tests/tsf/tsf_text_service_test.cpp",
+      "sha256": "3b3008ee7cb084c10f821cc9af8c3093c6b120246790adb366597b20797ab3f1"
+    },
+    {
+      "path": "testdata/imepacks/generate_fixtures.ps1",
+      "sha256": "9d422f1eba7a8138e9608881ab17a8943e75c42cfb727c5c27727c3c28068b7c"
+    },
+    {
+      "path": "proto/ime.proto",
+      "sha256": "67345479a47d070b896bce1a1e933e5d3ce289ec9b72aca88fa950f0d7b92ecb"
+    },
+    {
+      "path": "cmake/patch_librime_source_root.cmake",
+      "sha256": "c515c4509075106e5db87f5016fa7040a8b70c53f03764532dc955c47ada5015"
+    },
+    {
+      "path": "cmake/patch_librime_utf8.cmake",
+      "sha256": "ddd8e6ec24adf3e9e3daa416c75c2985d1cf1dd63c4826e7f007ab34e12a4e6b"
+    },
+    {
+      "path": "cmake/patch_librime_word_priority.cmake",
+      "sha256": "3efa6756338443efdffbd7a7c616dc45b066291293e5cd3ff2d160b7ea82a392"
+    },
+    {
+      "path": "cmake/verify_rime_assets.cmake",
+      "sha256": "c8d50f02f6ecf737352cbbcb9059d8e158dbd25e4839d6a39c14dceb985b7623"
+    },
+    {
+      "path": "scripts/benchmark_corpus_service.py",
+      "sha256": "a8bdd3549e24d12946da68dbd1956252f38e241b36caca0e9451c0527118160b"
+    },
+    {
+      "path": "scripts/bootstrap.ps1",
+      "sha256": "c3636ddee3e09a7766cadc9281b702e2bdf7a69163fff3be289b9ff818ba739f"
+    },
+    {
+      "path": "scripts/build-tsf-probe.ps1",
+      "sha256": "818816a3db1ed407d3eab577a9fe4cbe99e67406bc20a186e71b844fa5b53779"
+    },
+    {
+      "path": "scripts/build.ps1",
+      "sha256": "e4c83befb72e9c0f0848f758e828f344a62742de466c18add3e6b0cc9413f2b2"
+    },
+    {
+      "path": "scripts/corpus_import.py",
+      "sha256": "a172afd3bd60703beed954062524dc22f6fc02d0a30a8f95e03ec8a382541add"
+    },
+    {
+      "path": "scripts/corpus_refresh_metadata.py",
+      "sha256": "5525dadf8249069b45c75ca820d7b9dd73e4e3b7ea4732f9c527950e278d4925"
+    },
+    {
+      "path": "scripts/deploy-candidates-wanxiang.ps1",
+      "sha256": "83167125392ec4e5aac03c2f893d03432d6d9040b30010a5abd73decb3e02223"
+    },
+    {
+      "path": "scripts/deploy-connection-fix.ps1",
+      "sha256": "c3a07964623ea6bd491ea6d9ade6fe1d55b9d5a50262f13ec4b5cc40ae3aa394"
+    },
+    {
+      "path": "scripts/deploy-corpus.ps1",
+      "sha256": "e100f2a6231c91885a31680a4223b31808e9c5ac1c210b6097f2b3c25e99ebeb"
+    },
+    {
+      "path": "scripts/deploy-pinyin-rules.ps1",
+      "sha256": "3326bb312987c4de494b5501c5f06dfaad0d99ec176b2ebba1d28d15d8fc1a0d"
+    },
+    {
+      "path": "scripts/enable-user-profile.ps1",
+      "sha256": "6c97a8ea55c80bb8136fdce0122267d82d8472861dd1b5a8ab0efbbf6c0c4cd2"
+    },
+    {
+      "path": "scripts/fetch-context-model.py",
+      "sha256": "69902723402fcab55a12404539ed241f8b20e5384587c0bc4e5af14c32dd6485"
+    },
+    {
+      "path": "scripts/import-context-vocabulary.py",
+      "sha256": "44dbf53e6dd230f2d53d24d634354839012e5a5215594a272596c2dbb726cadc"
+    },
+    {
+      "path": "scripts/import-public-vocabulary.py",
+      "sha256": "f2d2d57f5a18eb871a43fc54c157535d9cd9cf6a4591b3e25c2fded50ed47306"
+    },
+    {
+      "path": "scripts/import-wanxiang.py",
+      "sha256": "6cfaca6d3c20ab9c6611b6df09d9ff2853624fcb7bdc4019437d3100c43f9390"
+    },
+    {
+      "path": "scripts/rollback-candidates-wanxiang.ps1",
+      "sha256": "01a3452b0faadd62e727719c04f6d0084c27f77b7b745902f2c155f53d00ea19"
+    },
+    {
+      "path": "scripts/switch-tsf.ps1",
+      "sha256": "e365562d395f9f6562d04005b055717881bec624b9683686db4a068b742caede"
+    },
+    {
+      "path": "scripts/test.ps1",
+      "sha256": "27f05a1b06445fccabe80fa5e6eb6a5ef7761f1079d1c549b4d5ef5498970b2d"
+    },
+    {
+      "path": "scripts/validate-full-pinyin.ps1",
+      "sha256": "32716cdefe9645712dcef211a4953b827f643669ecb7cbb4cc098d94052d34b7"
+    },
+    {
+      "path": "installer/Package.wxs",
+      "sha256": "d6f7deecb7587a7d2873976225a20704e474cea72beedf460d45fcb42ed40b11"
+    },
+    {
+      "path": "third_party/librime_patches/script_translator.cc",
+      "sha256": "d63be219fa350361e4098637a1c293a696a1afad068c9762f831dcb699fad27d"
+    },
+    {
+      "path": "third_party/octagram/LICENSE",
+      "sha256": "f67d27a6d2d586fcfed4b4c886a83747095396a39b6641e18e855086be2ec400"
+    },
+    {
+      "path": "third_party/octagram/src/gram_db.cc",
+      "sha256": "9e619d28a0c12837b7b32900bdde1c321f9b3230311a6463420d0265e5067a75"
+    },
+    {
+      "path": "third_party/octagram/src/gram_db.h",
+      "sha256": "57f32ab7c722b93d68637b9906eb2205b95664200c3dd70628e0529fb0c706c7"
+    },
+    {
+      "path": "third_party/octagram/src/gram_encoding.cc",
+      "sha256": "b1e5d0162e5b06dda87fd7d63d91697ada812bd5b8f94af820c5174903c7e789"
+    },
+    {
+      "path": "third_party/octagram/src/gram_encoding.h",
+      "sha256": "f74738734980136322f99d542d50e3b7c684468229c876f9ff8f517a8e39099c"
+    },
+    {
+      "path": "third_party/octagram/src/grammar_module.cc",
+      "sha256": "9e4571fdaf78a999575f227752b051417a37b051729553d29527377536bd53d6"
+    },
+    {
+      "path": "third_party/octagram/src/octagram.cc",
+      "sha256": "0dfe54e4fab36b733699b334f96801f6872a47f63cb1be68f5c256a6e256e11d"
+    },
+    {
+      "path": "third_party/octagram/src/octagram.h",
+      "sha256": "018772555e6574120814585f9757b3377e1a0712535ff1c5be3936b24e9087d6"
+    },
+    {
+      "path": "assets/rime/full_pinyin/AUTHORS",
+      "sha256": "f4cff0fcbca4668ac449c24a53be547e162bc60cce63fdc5d5906801a452edc4"
+    },
+    {
+      "path": "assets/rime/full_pinyin/CONTEXT-VOCABULARY.json",
+      "sha256": "592851146e1ab1a25da6d717e54ea35e1a0bbe924aa339e00c7d284ace649b97"
+    },
+    {
+      "path": "assets/rime/full_pinyin/default.yaml",
+      "sha256": "cd4e6db3a92367ee79815e9da142d72c00a5f916df3576c732410cbbfd6547d0"
+    },
+    {
+      "path": "assets/rime/full_pinyin/GRAMMAR-MODEL-LICENSE",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "assets/rime/full_pinyin/GRAMMAR-SOURCES.json",
+      "sha256": "7f732f5b898eb62a0cd7367a97dcc926d19360ea416135b9126788c2ddb599b1"
+    },
+    {
+      "path": "assets/rime/full_pinyin/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "assets/rime/full_pinyin/OCTAGRAM-LICENSE",
+      "sha256": "f67d27a6d2d586fcfed4b4c886a83747095396a39b6641e18e855086be2ec400"
+    },
+    {
+      "path": "assets/rime/full_pinyin/PINYIN-RULES-CLOVER-LICENSE",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "assets/rime/full_pinyin/PINYIN-RULES-ICE-LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "assets/rime/full_pinyin/PINYIN-RULES-SOURCES.md",
+      "sha256": "b258b9f56f6ce51a7dcbfb75f625d5f5559d2ae94b84f08cdc72b991b07d3224"
+    },
+    {
+      "path": "assets/rime/full_pinyin/pinyin_simp.dict.yaml",
+      "sha256": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b"
+    },
+    {
+      "path": "assets/rime/full_pinyin/PUBLIC-DICTIONARIES.json",
+      "sha256": "dd823a9875d766d5439ed5d9a845af58c6992df55ef8526d646325630d214ed3"
+    },
+    {
+      "path": "assets/rime/full_pinyin/PUBLIC-DICTIONARIES.txt",
+      "sha256": "136be89ba4c76f451102f1cdaef99372cfa7ecf841ceb371c55191791d632ed8"
+    },
+    {
+      "path": "assets/rime/full_pinyin/PUBLIC-FROST-LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "assets/rime/full_pinyin/PUBLIC-ICE-LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "assets/rime/full_pinyin/README.md",
+      "sha256": "a79c57f591d89916daa66f0a577a3bd6a310a773c17cc05984d47bad2f61676f"
+    },
+    {
+      "path": "assets/rime/full_pinyin/RIME-ENGINE-LICENSE",
+      "sha256": "f67d27a6d2d586fcfed4b4c886a83747095396a39b6641e18e855086be2ec400"
+    },
+    {
+      "path": "assets/rime/full_pinyin/WANXIANG-ATTRIBUTION.txt",
+      "sha256": "34d27aac999882bea0c18d5bc7be2fa1fefbc51e66b2da5571bf6dad8e9de741"
+    },
+    {
+      "path": "assets/rime/full_pinyin/WANXIANG-LICENSE",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "assets/rime/full_pinyin/wanxiang_plain.dict.yaml",
+      "sha256": "0bdb3b04d1fbc289b111b8beb02b0403b925d3cde60d5e004d052c91ee3d32b6"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_context.dict.yaml",
+      "sha256": "30834dcb2eb04e014f4e6d075d8284aaad8bcf00bf84a5e966999dac5f48d793"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_daily.dict.yaml",
+      "sha256": "4628b09bf975d5fdfade1ef8e116628ffc51056e8e0b87c7a766ef93d67a1982"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_pinyin.dict.yaml",
+      "sha256": "ee56b0ad5bed33c79aa0c80ecdc1e8cc1933df1b06a563821fe93de6bf6f8f9b"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_pinyin.schema.yaml",
+      "sha256": "ad612a642772e2417df9ac23928a1dfedea4f33117c6c8fabba4cf181b25cc56"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_pinyin_exact.schema.yaml",
+      "sha256": "49e72662cbdceeab14b7812dda86a1d72620092af4a579679de9476c837c18e4"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_public.dict.yaml",
+      "sha256": "ef81f05e492b720eb590c85a92432bbce57560be95e2611ab09a2ce3dd79a71e"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_test.dict.yaml",
+      "sha256": "3a27d8151ada91198e030f664a129a865300a9f8f6acd7eaf0ad6249cc0e2858"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_test.schema.yaml",
+      "sha256": "df94ae99e34295095fc5e9a9cbd5afae28e2f7f1615f14ddb136a22d7f9e4d53"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_xiehou.dict.yaml",
+      "sha256": "a4673dcb05ad3a73b7792cecffbf1de46ff142d2eb251735d1e51504a5130a02"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_xiehou.schema.yaml",
+      "sha256": "e2c45a18a1c720c703b207c8c7ca02c1d56323d72fa5cdca11fe944f549c65d3"
+    },
+    {
+      "path": "assets/rime/minimal/default.yaml",
+      "sha256": "758095df5cbc5bfc99f6244e1190e0dd9d95b26d2dd962d31688e33756bc6b81"
+    },
+    {
+      "path": "assets/rime/minimal/README.md",
+      "sha256": "2797567d819d25e08aa941b5938c5191f28e200a85756c5e949651e7e71111cb"
+    },
+    {
+      "path": "assets/rime/minimal/zhixu_test.dict.yaml",
+      "sha256": "3a27d8151ada91198e030f664a129a865300a9f8f6acd7eaf0ad6249cc0e2858"
+    },
+    {
+      "path": "assets/rime/minimal/zhixu_test.schema.yaml",
+      "sha256": "df94ae99e34295095fc5e9a9cbd5afae28e2f7f1615f14ddb136a22d7f9e4d53"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-frost/cn_dicts/41448.dict.yaml",
+      "sha256": "b2115eae3aea58190424c22825f6aea12f781ae23ea82b62cd951c41f6d576d5"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-frost/cn_dicts/8105.dict.yaml",
+      "sha256": "5a6bb545d07140406208728aeed70706e84279daeee132f10b069cd6387a042a"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-frost/cn_dicts/base.dict.yaml",
+      "sha256": "db5825b653107eb349627d39ae74833208e06d52eb0231ce10c3bb59b94e4f86"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-frost/cn_dicts/ext.dict.yaml",
+      "sha256": "44b78e4feb8a3b302298844061626aa4e2194901b8ed4ee6acec84261b6aa90d"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-frost/cn_dicts/GB18030-2022.dict.yaml",
+      "sha256": "cb1b9cb35eeb06dd04264b87d1312be7141209b118ba811e5298a9fd70e77acd"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-frost/cn_dicts/others.dict.yaml",
+      "sha256": "c61582ce68b045ccc50a792eb19144974ba5a13753f18a8d924950d9c992d9ad"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-frost/cn_dicts/tencent.dict.yaml",
+      "sha256": "55b1b1f32980d24a595e8a94a288f7896c84950622a34f2081d1147045ddceb7"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-frost/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-ice/cn_dicts/41448.dict.yaml",
+      "sha256": "39102601365554433396fa64947010f5a15e7a2c27d22f6cce4d80775919e7bc"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-ice/cn_dicts/8105.dict.yaml",
+      "sha256": "1f9a42b91dea6982baee2551981780271aeffd78876662b9c9f324e56b37b120"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-ice/cn_dicts/base.dict.yaml",
+      "sha256": "0418d5103d8e40c8fff4b686a873ad03e9836cd0419ecae0b7e1e2526312dba0"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-ice/cn_dicts/ext.dict.yaml",
+      "sha256": "8e49a0294c0139e63c815cc33a2d438cc144eb7889297d30cec899a368697c06"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-ice/cn_dicts/others.dict.yaml",
+      "sha256": "c7475d773e619f61b88d47fa8ec789aba02aa0d1c98edaed309e53487b048b32"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-ice/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/daolu.dict.yaml",
+      "sha256": "5f84c3dd2ae5d39b27084632998de92f13f3d9742e3ec1a97a3354e22c1716bd"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/diming.dict.yaml",
+      "sha256": "1f5e94c0dbf6d32eb46ab796470e76b37e90295d4f207707028873885bf39675"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/duoyin.dict.yaml",
+      "sha256": "b31bec6c64cc78bd1eec9fab0d978a6c040957e9dc83bc8bacdcc5ddf82d15b7"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/jichu.dict.yaml",
+      "sha256": "ea89860d41f229086a01d86ab2587fc6d8a1790723a30975a2d1dc9b535431f3"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/mingren.dict.yaml",
+      "sha256": "ca95a99a15d6635aa65514b2d7a183ddd3f62849486783565e001ca31d5c370e"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/renming.dict.yaml",
+      "sha256": "3fd6c23964f65408335b34889ab15ea6ab6a71a3672a188bcb1da6639a37a733"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/shiti.dict.yaml",
+      "sha256": "24c1829781c75a62389612e80a5407a23792091844cb7dc37a8d590b681fd867"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/yiren.dict.yaml",
+      "sha256": "80dcc15b4b26d59f18a7dcb75dafb6c372acac9b95a6ae705bfa68383c442915"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/dicts/zi.dict.yaml",
+      "sha256": "dbb68f8b4ef93e48bf3632b3c4bc00b810c6bbb2e101635d6e14752444abe7c9"
+    },
+    {
+      "path": "assets/rime/public_sources/rime-wanxiang/LICENSE",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "assets/rime/public_sources/sources.json",
+      "sha256": "55dc33fe1fa0f34f25376dab06b01cc2484ea413af4130b0ec79146205f27333"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/cuoyin.dict.yaml",
+      "sha256": "05b423d95163e3e94a4acfd6ef83e22f85fe6212aabd8678298b896147187bea"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/diming.dict.yaml",
+      "sha256": "693920bea0d37d01b178f9216e612d608182ed5cb404a3b9ed32623462ed4991"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/duoyin.dict.yaml",
+      "sha256": "039fa4effc4b793119f2eff3872d012328ab093ed47582ac8082cf14b8a86e14"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/fangyan.dict.yaml",
+      "sha256": "5d9b1b05e4c84c47a8a7c234429aaa0b793b5a711ed4d2a5b4cd5581485e7dac"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/huaxue.dict.yaml",
+      "sha256": "d886b18c68541a94fb0c189bb0c5e00f77fef99f9d2e14c80bf3d6cd477e9070"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/jichu.dict.yaml",
+      "sha256": "f4fd06780be7f8fee8f36153f5b74bef6c72dddfd548cc8e8aca049840bff225"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/lianxiang.dict.yaml",
+      "sha256": "ce8e318586b34e1d34d8a3bb1023725f5da9de9a44cd4b2722b87a08f7bef6e1"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/mingren.dict.yaml",
+      "sha256": "7d9855a387f29fa0b1f657a4293cc376fe937c2b5bd08d408d3682f5144aa688"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/renming.dict.yaml",
+      "sha256": "355fd75e7f7b948f76a166e83aefc776c133026182c19ac46d7d239f07523a9b"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/shici.dict.yaml",
+      "sha256": "3b42b0f4064c81d5d1d8cffd12c36fda1323dafb0ee3bae6dc33a8bb11c508cf"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/taifeng.dict.yaml",
+      "sha256": "da4e7a67f7c399bc27ee7227f669dc023eea722f1f369637100c2f57087ddf10"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/wuzhong.dict.yaml",
+      "sha256": "e4d5d3dcf44fc19f1552e332b4a0718a47c6ab9e9f9ca4c216b9b48c2f327fe9"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/yaopin.dict.yaml",
+      "sha256": "f7d43d5a0528000117dafea8359c44aba7960d5528edcb199b545dc96475ff30"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/yiren.dict.yaml",
+      "sha256": "b8fe6db561f1f3f3184de8e5206e6f1f6abf55742b2b753d0ad97ba3754ee314"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/yixue.dict.yaml",
+      "sha256": "7d46de7062b18530a30f7b53dac231213b988bf15d97d331130ebff506a3c0fc"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/dicts/zi.dict.yaml",
+      "sha256": "6f0d9f0b2fc7a54bbe496cdd1b9972378ef8992c502da8849ba8f3b647572b64"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/LICENSE",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/wanxiang.dict.yaml",
+      "sha256": "997b6f2b33787752a4631a52417deccf8286ba561745e148cd290a582fb5e65a"
+    },
+    {
+      "path": "assets/rime/wanxiang_source/zhixu_daily.original.dict.yaml",
+      "sha256": "73bf8b61d1ad6d010412e42c8133cb96b20fd7a71ec1b99acf6de3afeceb8e4d"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "92b733e5e641a4e96d5c992ca6199d02f8090cfb76282e6857af16b5e683c670"
+    },
+    {
+      "path": "CMakePresets.json",
+      "sha256": "0f337ab90fa63ef72795e52357a922aad258ae961005545c7f04c31cd0be5e71"
+    },
+    {
+      "path": "vcpkg.json",
+      "sha256": "7c84475109525da04bf72d701033fe56d60dca130d4c35c5c3d8314dc7664eee"
+    },
+    {
+      "path": "vcpkg-configuration.json",
+      "sha256": "768a18a4dba0c3c174e7c77c312a4eabff27528e76d69cb6f983dd596875bb54"
+    },
+    {
+      "path": "third_party.lock.json",
+      "sha256": "4c9d5ac44696838ead2a5814f604acd38438db3ca15fb6215e912601caadd141",
+      "original_sha256": "dd62a717bd732da65b7043872546f64c45db1310dc5b0e5ed2189e87f675bd13",
+      "export_change": "Refresh three stale generated product-schema hashes; upstream hashes unchanged."
+    }
+  ],
+  "export_metadata_changes": [
+    {
+      "path": "assets/rime/full_pinyin/zhixu_pinyin.dict.yaml",
+      "previous_sha256": "3c5668e4ce793a3c33eff438c63c2ca03e4a5d2323fd247ae94d9c2edba910ed",
+      "sha256": "ee56b0ad5bed33c79aa0c80ecdc1e8cc1933df1b06a563821fe93de6bf6f8f9b"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_pinyin.schema.yaml",
+      "previous_sha256": "847e4931155d1c86266226b4d5a6a52818aad9d3000b35a4cd92a8a4e5132ef6",
+      "sha256": "ad612a642772e2417df9ac23928a1dfedea4f33117c6c8fabba4cf181b25cc56"
+    },
+    {
+      "path": "assets/rime/full_pinyin/zhixu_pinyin_exact.schema.yaml",
+      "previous_sha256": "e628cb2f96c9a682ff684262d21be0e3ac738a4c1bf005ff159df291a2fe2055",
+      "sha256": "49e72662cbdceeab14b7812dda86a1d72620092af4a579679de9476c837c18e4"
+    }
+  ]
+}

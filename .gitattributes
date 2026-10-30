@@ -1,0 +1,3 @@
+# Keep source snapshot bytes stable across Windows/Linux checkouts.
+# Asset manifests and source patches contain immutable SHA-256 values.
+* -text

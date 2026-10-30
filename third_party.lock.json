@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "name": "librime",
+      "source": "https://codeload.github.com/rime/librime/tar.gz/33e78140250125871856cdc5b42ddc6a5fcd3cd4",
+      "revision": "33e78140250125871856cdc5b42ddc6a5fcd3cd4",
+      "sha256": "d3f48c2c58f718402229031d8d95fde9cac07ababa8fecf7d18b91946f27fee6",
+      "license": "BSD-3-Clause",
+      "approval_status": "development-only",
+      "upstream_version": "1.17.0",
+      "notes": "Official source archive verified 2026-09-22. Local patches fix AddRCInfo source root and cast UTF-8 scalar bytes to unsigned char before isalnum (cmake/patch_librime_source_root.cmake and cmake/patch_librime_utf8.cmake). Dictionary data has a separate asset record; model assets remain separate.",
+      "word_priority_patch": {
+        "description": "System full-word corrections retain priority over abbreviation sentences; learned fuzzy corrections retain upstream context-decoding behavior and exact learned phrases remain preferred.",
+        "upstream_script_translator_sha256": "539f28a31fa3f238d84088914597df1ac429906d9d5b4fd237151220f0b68848",
+        "files": [
+          {
+            "path": "cmake/patch_librime_word_priority.cmake",
+            "sha256": "3efa6756338443efdffbd7a7c616dc45b066291293e5cd3ff2d160b7ea82a392"
+          },
+          {
+            "path": "third_party/librime_patches/script_translator.cc",
+            "sha256": "d63be219fa350361e4098637a1c293a696a1afad068c9762f831dcb699fad27d"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rime-pinyin-simp",
+      "source": "https://github.com/rime/rime-pinyin-simp",
+      "revision": "0c6861ef7420ee780270ca6d993d18d4101049d0",
+      "license": "Apache-2.0",
+      "usage": "built-in full-Pinyin dictionary",
+      "retrieved_at": "2026-10-08",
+      "files": [
+        {
+          "path": "assets/rime/full_pinyin/pinyin_simp.dict.yaml",
+          "source": "https://raw.githubusercontent.com/rime/rime-pinyin-simp/0c6861ef7420ee780270ca6d993d18d4101049d0/pinyin_simp.dict.yaml",
+          "sha256": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b"
+        },
+        {
+          "path": "assets/rime/full_pinyin/LICENSE",
+          "source": "https://raw.githubusercontent.com/rime/rime-pinyin-simp/0c6861ef7420ee780270ca6d993d18d4101049d0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "assets/rime/full_pinyin/AUTHORS",
+          "source": "https://raw.githubusercontent.com/rime/rime-pinyin-simp/0c6861ef7420ee780270ca6d993d18d4101049d0/AUTHORS",
+          "sha256": "f4cff0fcbca4668ac449c24a53be547e162bc60cce63fdc5d5906801a452edc4"
+        }
+      ],
+      "notes": "Unmodified upstream source data derived from Android Pinyin IME. Original LICENSE and AUTHORS are bundled beside the dictionary. Zhixu full-Pinyin schema is independently maintained."
+    },
+    {
+      "name": "rime-wanxiang",
+      "source": "https://github.com/amzxyz/rime-wanxiang",
+      "revision": "b582a1b2a623a0da2d31729226224fd948e1c735",
+      "license": "CC-BY-4.0",
+      "usage": "built-in full-Pinyin dictionary",
+      "files": [
+        {
+          "path": "assets/rime/wanxiang_source/wanxiang.dict.yaml",
+          "sha256": "997b6f2b33787752a4631a52417deccf8286ba561745e148cd290a582fb5e65a",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/wanxiang.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/LICENSE",
+          "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/LICENSE"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/zi.dict.yaml",
+          "sha256": "6f0d9f0b2fc7a54bbe496cdd1b9972378ef8992c502da8849ba8f3b647572b64",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/zi.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/jichu.dict.yaml",
+          "sha256": "f4fd06780be7f8fee8f36153f5b74bef6c72dddfd548cc8e8aca049840bff225",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/jichu.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/lianxiang.dict.yaml",
+          "sha256": "ce8e318586b34e1d34d8a3bb1023725f5da9de9a44cd4b2722b87a08f7bef6e1",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/lianxiang.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/cuoyin.dict.yaml",
+          "sha256": "05b423d95163e3e94a4acfd6ef83e22f85fe6212aabd8678298b896147187bea",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/cuoyin.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/duoyin.dict.yaml",
+          "sha256": "039fa4effc4b793119f2eff3872d012328ab093ed47582ac8082cf14b8a86e14",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/duoyin.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/shici.dict.yaml",
+          "sha256": "3b42b0f4064c81d5d1d8cffd12c36fda1323dafb0ee3bae6dc33a8bb11c508cf",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/shici.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/diming.dict.yaml",
+          "sha256": "693920bea0d37d01b178f9216e612d608182ed5cb404a3b9ed32623462ed4991",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/diming.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/yixue.dict.yaml",
+          "sha256": "7d46de7062b18530a30f7b53dac231213b988bf15d97d331130ebff506a3c0fc",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/yixue.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/huaxue.dict.yaml",
+          "sha256": "d886b18c68541a94fb0c189bb0c5e00f77fef99f9d2e14c80bf3d6cd477e9070",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/huaxue.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/yaopin.dict.yaml",
+          "sha256": "f7d43d5a0528000117dafea8359c44aba7960d5528edcb199b545dc96475ff30",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/yaopin.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/mingren.dict.yaml",
+          "sha256": "7d9855a387f29fa0b1f657a4293cc376fe937c2b5bd08d408d3682f5144aa688",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/mingren.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/yiren.dict.yaml",
+          "sha256": "b8fe6db561f1f3f3184de8e5206e6f1f6abf55742b2b753d0ad97ba3754ee314",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/yiren.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/wuzhong.dict.yaml",
+          "sha256": "e4d5d3dcf44fc19f1552e332b4a0718a47c6ab9e9f9ca4c216b9b48c2f327fe9",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/wuzhong.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/renming.dict.yaml",
+          "sha256": "355fd75e7f7b948f76a166e83aefc776c133026182c19ac46d7d239f07523a9b",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/renming.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/taifeng.dict.yaml",
+          "sha256": "da4e7a67f7c399bc27ee7227f669dc023eea722f1f369637100c2f57087ddf10",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/taifeng.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/dicts/fangyan.dict.yaml",
+          "sha256": "5d9b1b05e4c84c47a8a7c234429aaa0b793b5a711ed4d2a5b4cd5581485e7dac",
+          "source": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/b582a1b2a623a0da2d31729226224fd948e1c735/dicts/fangyan.dict.yaml"
+        },
+        {
+          "path": "assets/rime/wanxiang_source/zhixu_daily.original.dict.yaml",
+          "sha256": "73bf8b61d1ad6d010412e42c8133cb96b20fd7a71ec1b99acf6de3afeceb8e4d"
+        },
+        {
+          "path": "assets/rime/full_pinyin/wanxiang_plain.dict.yaml",
+          "sha256": "0bdb3b04d1fbc289b111b8beb02b0403b925d3cde60d5e004d052c91ee3d32b6",
+          "generated": true
+        },
+        {
+          "path": "assets/rime/full_pinyin/zhixu_daily.dict.yaml",
+          "sha256": "4628b09bf975d5fdfade1ef8e116628ffc51056e8e0b87c7a766ef93d67a1982",
+          "generated": true
+        },
+        {
+          "path": "assets/rime/full_pinyin/WANXIANG-LICENSE",
+          "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+          "generated": true
+        },
+        {
+          "path": "assets/rime/full_pinyin/WANXIANG-ATTRIBUTION.txt",
+          "sha256": "34d27aac999882bea0c18d5bc7be2fa1fefbc51e66b2da5571bf6dad8e9de741",
+          "generated": true
+        }
+      ],
+      "notes": "All Chinese import tables; no Lua or grammar model. Reproduce offline with scripts/import-wanxiang.py --check."
+    },
+    {
+      "name": "zhixu-public-vocabulary",
+      "revision": "20261016.1",
+      "license": "CC-BY-4.0 AND GPL-3.0; see per-source metadata",
+      "usage": "additive full-Pinyin vocabulary; no Lua or language model",
+      "files": [
+        {
+          "path": "assets/rime/full_pinyin/PUBLIC-DICTIONARIES.json",
+          "sha256": "dd823a9875d766d5439ed5d9a845af58c6992df55ef8526d646325630d214ed3"
+        },
+        {
+          "path": "assets/rime/full_pinyin/PUBLIC-DICTIONARIES.txt",
+          "sha256": "136be89ba4c76f451102f1cdaef99372cfa7ecf841ceb371c55191791d632ed8"
+        },
+        {
+          "path": "assets/rime/full_pinyin/PUBLIC-FROST-LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "assets/rime/full_pinyin/PUBLIC-ICE-LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "assets/rime/full_pinyin/zhixu_pinyin.dict.yaml",
+          "sha256": "ee56b0ad5bed33c79aa0c80ecdc1e8cc1933df1b06a563821fe93de6bf6f8f9b"
+        },
+        {
+          "path": "assets/rime/full_pinyin/zhixu_pinyin.schema.yaml",
+          "sha256": "ad612a642772e2417df9ac23928a1dfedea4f33117c6c8fabba4cf181b25cc56"
+        },
+        {
+          "path": "assets/rime/full_pinyin/zhixu_pinyin_exact.schema.yaml",
+          "sha256": "49e72662cbdceeab14b7812dda86a1d72620092af4a579679de9476c837c18e4"
+        },
+        {
+          "path": "assets/rime/full_pinyin/zhixu_public.dict.yaml",
+          "sha256": "ef81f05e492b720eb590c85a92432bbce57560be95e2611ab09a2ce3dd79a71e"
+        },
+        {
+          "path": "assets/rime/full_pinyin/zhixu_test.dict.yaml",
+          "sha256": "3a27d8151ada91198e030f664a129a865300a9f8f6acd7eaf0ad6249cc0e2858"
+        },
+        {
+          "path": "assets/rime/full_pinyin/zhixu_test.schema.yaml",
+          "sha256": "df94ae99e34295095fc5e9a9cbd5afae28e2f7f1615f14ddb136a22d7f9e4d53"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/zi.dict.yaml",
+          "sha256": "dbb68f8b4ef93e48bf3632b3c4bc00b810c6bbb2e101635d6e14752444abe7c9"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/jichu.dict.yaml",
+          "sha256": "ea89860d41f229086a01d86ab2587fc6d8a1790723a30975a2d1dc9b535431f3"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/duoyin.dict.yaml",
+          "sha256": "b31bec6c64cc78bd1eec9fab0d978a6c040957e9dc83bc8bacdcc5ddf82d15b7"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/diming.dict.yaml",
+          "sha256": "1f5e94c0dbf6d32eb46ab796470e76b37e90295d4f207707028873885bf39675"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/mingren.dict.yaml",
+          "sha256": "ca95a99a15d6635aa65514b2d7a183ddd3f62849486783565e001ca31d5c370e"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/renming.dict.yaml",
+          "sha256": "3fd6c23964f65408335b34889ab15ea6ab6a71a3672a188bcb1da6639a37a733"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/yiren.dict.yaml",
+          "sha256": "80dcc15b4b26d59f18a7dcb75dafb6c372acac9b95a6ae705bfa68383c442915"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/daolu.dict.yaml",
+          "sha256": "5f84c3dd2ae5d39b27084632998de92f13f3d9742e3ec1a97a3354e22c1716bd"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/dicts/shiti.dict.yaml",
+          "sha256": "24c1829781c75a62389612e80a5407a23792091844cb7dc37a8d590b681fd867"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-wanxiang/LICENSE",
+          "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-ice/cn_dicts/8105.dict.yaml",
+          "sha256": "1f9a42b91dea6982baee2551981780271aeffd78876662b9c9f324e56b37b120"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-ice/cn_dicts/41448.dict.yaml",
+          "sha256": "39102601365554433396fa64947010f5a15e7a2c27d22f6cce4d80775919e7bc"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-ice/cn_dicts/base.dict.yaml",
+          "sha256": "0418d5103d8e40c8fff4b686a873ad03e9836cd0419ecae0b7e1e2526312dba0"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-ice/cn_dicts/ext.dict.yaml",
+          "sha256": "8e49a0294c0139e63c815cc33a2d438cc144eb7889297d30cec899a368697c06"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-ice/cn_dicts/others.dict.yaml",
+          "sha256": "c7475d773e619f61b88d47fa8ec789aba02aa0d1c98edaed309e53487b048b32"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-ice/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-frost/cn_dicts/8105.dict.yaml",
+          "sha256": "5a6bb545d07140406208728aeed70706e84279daeee132f10b069cd6387a042a"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-frost/cn_dicts/41448.dict.yaml",
+          "sha256": "b2115eae3aea58190424c22825f6aea12f781ae23ea82b62cd951c41f6d576d5"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-frost/cn_dicts/GB18030-2022.dict.yaml",
+          "sha256": "cb1b9cb35eeb06dd04264b87d1312be7141209b118ba811e5298a9fd70e77acd"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-frost/cn_dicts/base.dict.yaml",
+          "sha256": "db5825b653107eb349627d39ae74833208e06d52eb0231ce10c3bb59b94e4f86"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-frost/cn_dicts/ext.dict.yaml",
+          "sha256": "44b78e4feb8a3b302298844061626aa4e2194901b8ed4ee6acec84261b6aa90d"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-frost/cn_dicts/others.dict.yaml",
+          "sha256": "c61582ce68b045ccc50a792eb19144974ba5a13753f18a8d924950d9c992d9ad"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-frost/cn_dicts/tencent.dict.yaml",
+          "sha256": "55b1b1f32980d24a595e8a94a288f7896c84950622a34f2081d1147045ddceb7"
+        },
+        {
+          "path": "assets/rime/public_sources/rime-frost/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "assets/rime/public_sources/sources.json",
+          "sha256": "55dc33fe1fa0f34f25376dab06b01cc2484ea413af4130b0ec79146205f27333"
+        },
+        {
+          "path": "scripts/import-public-vocabulary.py",
+          "sha256": "f2d2d57f5a18eb871a43fc54c157535d9cd9cf6a4591b3e25c2fded50ed47306"
+        }
+      ],
+      "notes": "Reproduce offline: python scripts/import-public-vocabulary.py --check --destination assets/rime/full_pinyin. Original Wanxiang assets remain byte-identical."
+    },
+    {
+      "name": "librime-octagram",
+      "license": "BSD-3-Clause",
+      "revision": "57d18b9f58e5284bd891d559f6bdd16cf60341e9",
+      "repository": "https://github.com/lotem/librime-octagram",
+      "archive_sha256": "7b9c77bcf17566b64204791b72cdb1b4471e22efec5eef9b79ca764ab99a1576",
+      "local_changes": "Bounded format/offset/array validation in gram_db.cc before loading memory-mapped images; upstream archive unchanged and pinned separately.",
+      "files": [
+        {
+          "path": "third_party/octagram/LICENSE",
+          "sha256": "f67d27a6d2d586fcfed4b4c886a83747095396a39b6641e18e855086be2ec400"
+        },
+        {
+          "path": "third_party/octagram/src/gram_db.cc",
+          "sha256": "9e619d28a0c12837b7b32900bdde1c321f9b3230311a6463420d0265e5067a75"
+        },
+        {
+          "path": "third_party/octagram/src/gram_db.h",
+          "sha256": "57f32ab7c722b93d68637b9906eb2205b95664200c3dd70628e0529fb0c706c7"
+        },
+        {
+          "path": "third_party/octagram/src/gram_encoding.cc",
+          "sha256": "b1e5d0162e5b06dda87fd7d63d91697ada812bd5b8f94af820c5174903c7e789"
+        },
+        {
+          "path": "third_party/octagram/src/gram_encoding.h",
+          "sha256": "f74738734980136322f99d542d50e3b7c684468229c876f9ff8f517a8e39099c"
+        },
+        {
+          "path": "third_party/octagram/src/grammar_module.cc",
+          "sha256": "9e4571fdaf78a999575f227752b051417a37b051729553d29527377536bd53d6"
+        },
+        {
+          "path": "third_party/octagram/src/octagram.cc",
+          "sha256": "0dfe54e4fab36b733699b334f96801f6872a47f63cb1be68f5c256a6e256e11d"
+        },
+        {
+          "path": "third_party/octagram/src/octagram.h",
+          "sha256": "018772555e6574120814585f9757b3377e1a0712535ff1c5be3936b24e9087d6"
+        }
+      ]
+    },
+    {
+      "name": "wanxiang-context-model",
+      "updated_at": "2026-10-26T01:12:09Z",
+      "sha256": "sha256:e34500ab44626dc039a0641792ecba98ab63307646eb3d29186be56608ffe094",
+      "repository": "https://github.com/amzxyz/RIME-LMDG",
+      "asset_id": 676604065,
+      "bytes": 418078764,
+      "url": "https://github.com/amzxyz/rime-wanxiang-data/releases/download/LTS/wanxiang-lts-zh-hans.gram",
+      "release_id": 268075342,
+      "license": "CC-BY-4.0",
+      "canonical_repository": "https://github.com/amzxyz/rime-wanxiang-data"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "note": "Model bytes unmodified; user input is never transmitted.",
+  "plugin": {
+    "license": "BSD-3-Clause",
+    "revision": "57d18b9f58e5284bd891d559f6bdd16cf60341e9",
+    "repository": "https://github.com/lotem/librime-octagram",
+    "archive_sha256": "7b9c77bcf17566b64204791b72cdb1b4471e22efec5eef9b79ca764ab99a1576",
+    "local_changes": "Bounded format/offset/array validation in gram_db.cc before loading memory-mapped images; upstream archive unchanged and pinned separately.",
+    "files": [
+      {
+        "path": "third_party/octagram/LICENSE",
+        "sha256": "f67d27a6d2d586fcfed4b4c886a83747095396a39b6641e18e855086be2ec400"
+      },
+      {
+        "path": "third_party/octagram/src/gram_db.cc",
+        "sha256": "9e619d28a0c12837b7b32900bdde1c321f9b3230311a6463420d0265e5067a75"
+      },
+      {
+        "path": "third_party/octagram/src/gram_db.h",
+        "sha256": "57f32ab7c722b93d68637b9906eb2205b95664200c3dd70628e0529fb0c706c7"
+      },
+      {
+        "path": "third_party/octagram/src/gram_encoding.cc",
+        "sha256": "b1e5d0162e5b06dda87fd7d63d91697ada812bd5b8f94af820c5174903c7e789"
+      },
+      {
+        "path": "third_party/octagram/src/gram_encoding.h",
+        "sha256": "f74738734980136322f99d542d50e3b7c684468229c876f9ff8f517a8e39099c"
+      },
+      {
+        "path": "third_party/octagram/src/grammar_module.cc",
+        "sha256": "9e4571fdaf78a999575f227752b051417a37b051729553d29527377536bd53d6"
+      },
+      {
+        "path": "third_party/octagram/src/octagram.cc",
+        "sha256": "0dfe54e4fab36b733699b334f96801f6872a47f63cb1be68f5c256a6e256e11d"
+      },
+      {
+        "path": "third_party/octagram/src/octagram.h",
+        "sha256": "018772555e6574120814585f9757b3377e1a0712535ff1c5be3936b24e9087d6"
+      }
+    ]
+  },
+  "model": {
+    "updated_at": "2026-10-26T01:12:09Z",
+    "sha256": "sha256:e34500ab44626dc039a0641792ecba98ab63307646eb3d29186be56608ffe094",
+    "repository": "https://github.com/amzxyz/RIME-LMDG",
+    "asset_id": 676604065,
+    "bytes": 418078764,
+    "url": "https://github.com/amzxyz/rime-wanxiang-data/releases/download/LTS/wanxiang-lts-zh-hans.gram",
+    "release_id": 268075342,
+    "license": "CC-BY-4.0",
+    "canonical_repository": "https://github.com/amzxyz/rime-wanxiang-data"
+  },
+  "core_policy": {
+    "description": "System full-word corrections retain priority over abbreviation sentences; learned fuzzy corrections retain upstream context-decoding behavior and exact learned phrases remain preferred.",
+    "upstream_script_translator_sha256": "539f28a31fa3f238d84088914597df1ac429906d9d5b4fd237151220f0b68848",
+    "files": [
+      {
+        "path": "cmake/patch_librime_word_priority.cmake",
+        "sha256": "3efa6756338443efdffbd7a7c616dc45b066291293e5cd3ff2d160b7ea82a392"
+      },
+      {
+        "path": "third_party/librime_patches/script_translator.cc",
+        "sha256": "d63be219fa350361e4098637a1c293a696a1afad068c9762f831dcb699fad27d"
+      }
+    ]
+  }
+}

@@ -1,0 +1,233 @@
+# Repository-authored modern vocabulary for ZhixuIME, 2026-10-08.
+# Weights are curated ranking hints, not measured corpus frequencies.
+# This file does not alter the Apache-2.0 upstream pinyin_simp dictionary.
+---
+name: zhixu_daily
+version: "1.0.0"
+sort: by_weight
+...
+微信	wei xin	10000
+微信支付	wei xin zhi fu	5000
+微信公众号	wei xin gong zhong hao	3000
+小程序	xiao cheng xu	4000
+扫码	sao ma	5000
+扫码支付	sao ma zhi fu	8000
+扫码登录	sao ma deng lu	5000
+移动支付	yi dong zhi fu	5000
+支付密码	zhi fu mi ma	3000
+支付成功	zhi fu cheng gong	3000
+支付失败	zhi fu shi bai	3000
+支付方式	zhi fu fang shi	3000
+电子支付	dian zi zhi fu	2000
+数字人民币	shu zi ren min bi	2000
+网上转账	wang shang zhuan zhang	3000
+收款码	shou kuan ma	4000
+付款码	fu kuan ma	4000
+客服消息	ke fu xiao xi	2000
+信息验证	xin xi yan zheng	1500
+短信验证码	duan xin yan zheng ma	5000
+短信验证	duan xin yan zheng	3500
+身份验证	shen fen yan zheng	3000
+手机号	shou ji hao	8000
+手机号码	shou ji hao ma	6000
+手机充值	shou ji chong zhi	4000
+实名认证	shi ming ren zheng	4000
+人脸识别	ren lian shi bie	5000
+语音识别	yu yin shi bie	3000
+语音输入	yu yin shu ru	3000
+文字识别	wen zi shi bie	3000
+输入法设置	shu ru fa she zhi	4000
+中文输入法	zhong wen shu ru fa	5000
+中文输入	zhong wen shu ru	4000
+全拼	quan pin	5000
+双拼	shuang pin	3000
+简拼	jian pin	3000
+拼音输入	pin yin shu ru	4000
+拼音输入法	pin yin shu ru fa	4000
+候选词	hou xuan ci	5000
+候选词组	hou xuan ci zu	4000
+候选列表	hou xuan lie biao	3500
+候选窗口	hou xuan chuang kou	3500
+候选翻页	hou xuan fan ye	4000
+用户词库	yong hu ci ku	4000
+用户词典	yong hu ci dian	3000
+个人词库	ge ren ci ku	3000
+常用词组	chang yong ci zu	3500
+词库更新	ci ku geng xin	3500
+词频学习	ci pin xue xi	3000
+智能组句	zhi neng zu ju	4000
+知序	zhi xu	5000
+顺网	shun wang	5000
+网吧管理	wang ba guan li	2500
+会员充值	hui yuan chong zhi	3000
+余额查询	yu e cha xun	3000
+包间计费	bao jian ji fei	3000
+吧台交班	ba tai jiao ban	2500
+网费扣除	wang fei kou chu	2000
+云计算	yun ji suan	6000
+大数据	da shu ju	6000
+机器学习	ji qi xue xi	6000
+深度学习	shen du xue xi	5500
+神经网络	shen jing wang luo	4000
+模型推理	mo xing tui li	3000
+模型训练	mo xing xun lian	3000
+本地模型	ben di mo xing	3000
+离线运行	li xian yun xing	2500
+离线输入	li xian shu ru	3000
+网络连接	wang luo lian jie	3000
+连接超时	lian jie chao shi	3000
+连接失败	lian jie shi bai	3000
+网络异常	wang luo yi chang	2500
+后台服务	hou tai fu wu	3500
+服务重启	fu wu chong qi	3000
+版本升级	ban ben sheng ji	3500
+版本更新	ban ben geng xin	3500
+系统设置	xi tong she zhi	3500
+系统通知	xi tong tong zhi	2500
+隐私保护	yin si bao hu	3500
+个人信息	ge ren xin xi	3000
+用户设置	yong hu she zhi	3000
+用户登录	yong hu deng lu	3000
+二维码识别	er wei ma shi bie	3000
+文件路径	wen jian lu jing	3500
+文件同步	wen jian tong bu	3000
+文件备份	wen jian bei fen	3000
+文件恢复	wen jian hui fu	2500
+自动保存	zi dong bao cun	3000
+自动备份	zi dong bei fen	3000
+日志文件	ri zhi wen jian	3000
+错误日志	cuo wu ri zhi	3000
+调试日志	tiao shi ri zhi	3000
+数据备份	shu ju bei fen	3000
+数据恢复	shu ju hui fu	3000
+数据库连接	shu ju ku lian jie	2500
+数据库查询	shu ju ku cha xun	2500
+数据库事务	shu ju ku shi wu	2500
+数据同步	shu ju tong bu	3000
+数据导入	shu ju dao ru	3000
+数据导出	shu ju dao chu	3000
+配置文件	pei zhi wen jian	3500
+配置更新	pei zhi geng xin	2500
+源代码	yuan dai ma	4000
+代码审查	dai ma shen cha	2500
+编译错误	bian yi cuo wu	3000
+单元测试	dan yuan ce shi	2500
+集成测试	ji cheng ce shi	2500
+回归测试	hui gui ce shi	2500
+自动化测试	zi dong hua ce shi	2500
+测试用例	ce shi yong li	2500
+软件开发	ruan jian kai fa	3000
+项目计划	xiang mu ji hua	2500
+需求文档	xu qiu wen dang	2500
+技术文档	ji shu wen dang	2500
+进度更新	jin du geng xin	2500
+问题反馈	wen ti fan kui	3500
+功能完善	gong neng wan shan	2500
+兼容性	jian rong xing	3000
+兼容测试	jian rong ce shi	2000
+视频会议	shi pin hui yi	4000
+远程办公	yuan cheng ban gong	5000
+远程会议	yuan cheng hui yi	3500
+会议纪要	hui yi ji yao	3500
+在线文档	zai xian wen dang	3000
+在线协作	zai xian xie zuo	3000
+共享文档	gong xiang wen dang	3000
+发送文件	fa song wen jian	3500
+发送消息	fa song xiao xi	4000
+消息通知	xiao xi tong zhi	3500
+消息提醒	xiao xi ti xing	3500
+语音消息	yu yin xiao xi	4000
+语音通话	yu yin tong hua	3500
+视频通话	shi pin tong hua	3500
+工作群	gong zuo qun	3000
+聊天记录	liao tian ji lu	3500
+聊天窗口	liao tian chuang kou	3500
+群消息	qun xiao xi	3000
+消息记录	xiao xi ji lu	2500
+免打扰	mian da rao	2500
+共享单车	gong xiang dan che	5000
+网约车	wang yue che	5000
+叫车	jiao che	3000
+打车软件	da che ruan jian	3000
+网约车司机	wang yue che si ji	2000
+地图导航	di tu dao hang	3000
+实时导航	shi shi dao hang	3000
+出行记录	chu xing ji lu	2000
+电子车票	dian zi che piao	3000
+乘车码	cheng che ma	4000
+扫码乘车	sao ma cheng che	3000
+出行计划	chu xing ji hua	2500
+高铁站	gao tie zhan	3500
+预订车票	yu ding che piao	3000
+在线购票	zai xian gou piao	3000
+快递单号	kuai di dan hao	5000
+快递查询	kuai di cha xun	3500
+物流信息	wu liu xin xi	3000
+物流查询	wu liu cha xun	3000
+快递签收	kuai di qian shou	3000
+配送地址	pei song di zhi	3500
+收货地址	shou huo di zhi	3500
+快递柜	kuai di gui	3000
+取件码	qu jian ma	3000
+取件通知	qu jian tong zhi	2000
+外卖订单	wai mai ding dan	3000
+订单查询	ding dan cha xun	3000
+订单状态	ding dan zhuang tai	3000
+配送进度	pei song jin du	2500
+到货通知	dao huo tong zhi	2500
+售后服务	shou hou fu wu	3500
+退款进度	tui kuan jin du	2000
+申请退款	shen qing tui kuan	2500
+购物车	gou wu che	3000
+在线支付	zai xian zhi fu	4000
+订单支付	ding dan zhi fu	3000
+付款成功	fu kuan cheng gong	3000
+订单取消	ding dan qu xiao	2500
+优惠券	you hui quan	3000
+电子发票	dian zi fa piao	3500
+发票抬头	fa piao tai tou	2500
+发票信息	fa piao xin xi	2000
+小红书	xiao hong shu	3500
+短视频	duan shi pin	4000
+直播间	zhi bo jian	3000
+网络直播	wang luo zhi bo	3000
+智能手机	zhi neng shou ji	4000
+智能家居	zhi neng jia ju	3000
+电子设备	dian zi she bei	3000
+手机应用	shou ji ying yong	3000
+应用商店	ying yong shang dian	3000
+共享充电宝	gong xiang chong dian bao	2500
+充电宝	chong dian bao	4000
+蓝牙耳机	lan ya er ji	3000
+无线耳机	wu xian er ji	2500
+无线网络	wu xian wang luo	3000
+网络热点	wang luo re dian	2500
+热点分享	re dian fen xiang	2500
+手机截图	shou ji jie tu	3000
+屏幕截图	ping mu jie tu	3000
+屏幕录制	ping mu lu zhi	2500
+录屏	lu ping	3000
+扫一扫	sao yi sao	4000
+二维码扫描	er wei ma sao miao	2500
+健康码	jian kang ma	2000
+行程码	xing cheng ma	1800
+预约挂号	yu yue gua hao	3000
+在线预约	zai xian yu yue	3000
+预约时间	yu yue shi jian	3000
+预约信息	yu yue xin xi	2500
+社区服务	she qu fu wu	2500
+电子证件	dian zi zheng jian	2500
+安全验证	an quan yan zheng	3000
+安全设置	an quan she zhi	2500
+双重验证	shuang chong yan zheng	2500
+双重认证	shuang chong ren zheng	2000
+忘记密码	wang ji mi ma	3000
+重置密码	chong zhi mi ma	3000
+修改密码	xiu gai mi ma	3000
+账户设置	zhang hu she zhi	2500
+账号登录	zhang hao deng lu	3000
+账号安全	zhang hao an quan	2500
+退出登录	tui chu deng lu	3000
+登录成功	deng lu cheng gong	3000
+登录失败	deng lu shi bai	3000
+重新登录	chong xin deng lu	3000

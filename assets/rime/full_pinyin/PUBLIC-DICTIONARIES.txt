@@ -1,0 +1,7 @@
+Public vocabulary supplement 20261016.1
+Sources and pinned revisions, file hashes, licenses and modifications: PUBLIC-DICTIONARIES.json
+Wanxiang: https://github.com/amzxyz/rime-wanxiang (CC-BY-4.0)
+Rime Ice: https://github.com/iDvel/rime-ice (GPL-3.0)
+Rime Frost: https://github.com/gaboolic/rime-frost (GPL-3.0)
+Corresponding unmodified dictionary data and license texts: public-dictionary-sources.zip alongside this notice.
+Original attribution comments are preserved in the corresponding source files.

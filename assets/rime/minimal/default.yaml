@@ -1,0 +1,8 @@
+# Repository-owned minimal runtime configuration.
+config_version: "0.1"
+
+schema_list:
+  - schema: zhixu_test
+
+menu:
+  page_size: 8
